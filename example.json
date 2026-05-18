@@ -1,12 +1,12 @@
 {
     "sequence":"",
-    "lenght":"",
+    "length":"",
     "name":"",
     "organism":"",
     "date":"",
     "vers":"",
     "file":"",
-    "metrique":"",
+    "metrics":"",
     "interframes": [
         {
             "index": "",
