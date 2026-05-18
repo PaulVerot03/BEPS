@@ -1,0 +1,16 @@
+{
+    "sequence":"",
+    "lenght":"",
+    "name":"",
+    "organism":"",
+    "date":"",
+    "vers":"",
+    "file":"",
+    "metrique":"",
+    "interframes": [
+        {
+            "index": "",
+            "file": ""
+        }
+    ]
+}
