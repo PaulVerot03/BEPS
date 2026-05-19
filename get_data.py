@@ -1,6 +1,6 @@
 import pandas as pd
 import json
-
+import os
 '''
 This .py file will be called by the main task, it will be given a path to the specific vis_  dir.
 In this dir are found :
@@ -23,7 +23,9 @@ def read_metric(path):
     return df
 
 def parse_vis(vis_df):
+    avg = 0.0
     frames = []
+    ctr = 1
     for _, row in vis_df.iterrows():
         interframe = {
             "phase": str(row.iloc[0]),
@@ -32,7 +34,15 @@ def parse_vis(vis_df):
             "pdb_path": str(row.iloc[3])
         }
         frames.append(interframe)
-    return frames
+        avg += float(row.iloc[2])
+        ctr +=1
+    avg = avg / ctr
+    return frames #, avg
+def get_std_mean(vis_df):
+    mean = vis_df["score"].mean()
+    std = vis_df["score"].std()
+    return std, mean
+    
 
 def parse_metrics(metrics_df):
     row = metrics_df.iloc[0]
@@ -63,7 +73,8 @@ def parse_metrics(metrics_df):
     
     return document, top_level_info
 
-def prepare_send_to_mongo(metrics, top_level_info, frames):
+
+def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std):
     last_pdb = frames[-1]["pdb_path"] if frames else ""
     
     document = {
@@ -74,26 +85,45 @@ def prepare_send_to_mongo(metrics, top_level_info, frames):
         "vers": "",
         "file": last_pdb,
         "metrics": metrics,
-        "RMSD": "",
+        "RMSD_avg":avg,
+        "RMSD_std":std,
         "interframes": frames
     }
     return document
 
-def main():
-    path = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/outputs/vis_20260519_114243"
-    
-    # Read CSVs using pandas
-    vis_df = read_folding_vis(path)
-    metrics_df = read_metric(path)
 
-    # Parse to dicts
-    frames = parse_vis(vis_df)
-    metrics_dict, top_level_info = parse_metrics(metrics_df)
+
+def main():
+    origin_path = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/"
     
-    # Prepare final document
-    final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames)
+    # Method,Score_Function,Sequence_Length,Bead_Atom,Wall_Time_s,GPU_Time_s,Final_Score,Best_Score_Step,Molecule,Out_Name,Potential,Bond,Vis_Dir
+    source_file = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/metrics.csv"
+    source = pd.read_csv(source_file, skipinitialspace=True)
     
-    print(f"{json.dumps(final_document, indent=4)}")
+    all_documents = []
+    
+    for i,row in source.iterrows():
+        path = os.path.join(origin_path,row["Vis_Dir"])
+        #print(row["Vis_Dir"])
+        vis_df = read_folding_vis(path)
+        metrics_df = read_metric(path)
+
+        frames = parse_vis(vis_df)
+        std,mean = get_std_mean(vis_df)
+        metrics_dict, top_level_info = parse_metrics(metrics_df)
+        
+        final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std)
+        all_documents.append(final_document)
+        #print(f"{json.dumps(final_document, indent=4)}")
+
+    output_file = "mongo_insert.json"
+    with open(output_file, 'w') as f:
+        json.dump(all_documents, f, indent=4)
+    
+    print(f"Successfully wrote {len(all_documents)} documents to {output_file}")
+
+
+
 
 if __name__ == '__main__':
     main()
