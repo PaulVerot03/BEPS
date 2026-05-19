@@ -20,12 +20,12 @@ db.sequences.insertOne({
         "bond":""
     },
     "RMSD":"",
+    "video_path":"",
     "interframes": [
         {
             "phase":"",
             "epoch":"",
             "score":"",
-            "video_path":"",
             "pdb_path":""
         }
     ]
