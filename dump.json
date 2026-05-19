@@ -1,0 +1,5128 @@
+{
+    "sequence": "CCUGGUAUUGCAGUACCUCCAGGU",
+    "name": "nan",
+    "organism": "nan",
+    "date": "",
+    "vers": "",
+    "file": "outputs/vis_20260519_114243/vis_170000_full_atom.pdb",
+    "metrics": {
+        "methods": "bead-springs",
+        "score_function": "rmsd",
+        "length": "24",
+        "bead_atom": "C3'",
+        "chain": "R",
+        "time": "128.687",
+        "gpu_time": "0.0",
+        "video_path": "folding_video.mp4",
+        "final_score": "0.2834",
+        "best_score_step": "17",
+        "molecule": "RNA",
+        "local_filepath": "outputs/opt_bs_C3'_rmsd_Seq_1_20260519_114243_full_atom.pdb",
+        "potential": "0.2687332034111023",
+        "bond": "0.349815160036087"
+    },
+    "RMSD": "",
+    "interframes": [
+        {
+            "phase": "phase",
+            "epoch": "200",
+            "score": "35.8994",
+            "pdb_path": "outputs/vis_20260519_114243/vis_000200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "400",
+            "score": "34.506",
+            "pdb_path": "outputs/vis_20260519_114243/vis_000400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "600",
+            "score": "33.4792",
+            "pdb_path": "outputs/vis_20260519_114243/vis_000600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "800",
+            "score": "32.3153",
+            "pdb_path": "outputs/vis_20260519_114243/vis_000800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "1000",
+            "score": "31.4063",
+            "pdb_path": "outputs/vis_20260519_114243/vis_001000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "1200",
+            "score": "30.3827",
+            "pdb_path": "outputs/vis_20260519_114243/vis_001200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "1400",
+            "score": "28.9842",
+            "pdb_path": "outputs/vis_20260519_114243/vis_001400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "1600",
+            "score": "27.7967",
+            "pdb_path": "outputs/vis_20260519_114243/vis_001600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "1800",
+            "score": "26.4666",
+            "pdb_path": "outputs/vis_20260519_114243/vis_001800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "2000",
+            "score": "25.18",
+            "pdb_path": "outputs/vis_20260519_114243/vis_002000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "2200",
+            "score": "24.0528",
+            "pdb_path": "outputs/vis_20260519_114243/vis_002200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "2400",
+            "score": "23.0972",
+            "pdb_path": "outputs/vis_20260519_114243/vis_002400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "2600",
+            "score": "21.6549",
+            "pdb_path": "outputs/vis_20260519_114243/vis_002600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "2800",
+            "score": "20.6359",
+            "pdb_path": "outputs/vis_20260519_114243/vis_002800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "3000",
+            "score": "19.1366",
+            "pdb_path": "outputs/vis_20260519_114243/vis_003000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "3200",
+            "score": "17.5893",
+            "pdb_path": "outputs/vis_20260519_114243/vis_003200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "3400",
+            "score": "16.461",
+            "pdb_path": "outputs/vis_20260519_114243/vis_003400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "3600",
+            "score": "15.0355",
+            "pdb_path": "outputs/vis_20260519_114243/vis_003600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "3800",
+            "score": "13.4129",
+            "pdb_path": "outputs/vis_20260519_114243/vis_003800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "4000",
+            "score": "12.1421",
+            "pdb_path": "outputs/vis_20260519_114243/vis_004000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "4200",
+            "score": "10.0826",
+            "pdb_path": "outputs/vis_20260519_114243/vis_004200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "4400",
+            "score": "8.4518",
+            "pdb_path": "outputs/vis_20260519_114243/vis_004400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "4600",
+            "score": "6.8027",
+            "pdb_path": "outputs/vis_20260519_114243/vis_004600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "4800",
+            "score": "4.6119",
+            "pdb_path": "outputs/vis_20260519_114243/vis_004800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "5000",
+            "score": "3.2332",
+            "pdb_path": "outputs/vis_20260519_114243/vis_005000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "5200",
+            "score": "1.3339",
+            "pdb_path": "outputs/vis_20260519_114243/vis_005200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "5400",
+            "score": "0.716",
+            "pdb_path": "outputs/vis_20260519_114243/vis_005400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "5600",
+            "score": "0.5289",
+            "pdb_path": "outputs/vis_20260519_114243/vis_005600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "5800",
+            "score": "0.5892",
+            "pdb_path": "outputs/vis_20260519_114243/vis_005800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "6000",
+            "score": "0.4899",
+            "pdb_path": "outputs/vis_20260519_114243/vis_006000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "6200",
+            "score": "0.533",
+            "pdb_path": "outputs/vis_20260519_114243/vis_006200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "6400",
+            "score": "0.651",
+            "pdb_path": "outputs/vis_20260519_114243/vis_006400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "6600",
+            "score": "0.5309",
+            "pdb_path": "outputs/vis_20260519_114243/vis_006600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "6800",
+            "score": "0.5481",
+            "pdb_path": "outputs/vis_20260519_114243/vis_006800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "7000",
+            "score": "0.5653",
+            "pdb_path": "outputs/vis_20260519_114243/vis_007000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "7200",
+            "score": "0.6901",
+            "pdb_path": "outputs/vis_20260519_114243/vis_007200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "7400",
+            "score": "0.5116",
+            "pdb_path": "outputs/vis_20260519_114243/vis_007400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "7600",
+            "score": "0.4692",
+            "pdb_path": "outputs/vis_20260519_114243/vis_007600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "7800",
+            "score": "0.7063",
+            "pdb_path": "outputs/vis_20260519_114243/vis_007800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "8000",
+            "score": "0.5797",
+            "pdb_path": "outputs/vis_20260519_114243/vis_008000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "8200",
+            "score": "3.564",
+            "pdb_path": "outputs/vis_20260519_114243/vis_008200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "8400",
+            "score": "0.6793",
+            "pdb_path": "outputs/vis_20260519_114243/vis_008400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "8600",
+            "score": "1.8107",
+            "pdb_path": "outputs/vis_20260519_114243/vis_008600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "8800",
+            "score": "0.6446",
+            "pdb_path": "outputs/vis_20260519_114243/vis_008800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "9000",
+            "score": "0.3471",
+            "pdb_path": "outputs/vis_20260519_114243/vis_009000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "9200",
+            "score": "0.7431",
+            "pdb_path": "outputs/vis_20260519_114243/vis_009200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "9400",
+            "score": "0.607",
+            "pdb_path": "outputs/vis_20260519_114243/vis_009400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "9600",
+            "score": "0.8363",
+            "pdb_path": "outputs/vis_20260519_114243/vis_009600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "9800",
+            "score": "0.5788",
+            "pdb_path": "outputs/vis_20260519_114243/vis_009800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "10000",
+            "score": "0.6596",
+            "pdb_path": "outputs/vis_20260519_114243/vis_010000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "10200",
+            "score": "3.3529",
+            "pdb_path": "outputs/vis_20260519_114243/vis_010200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "10400",
+            "score": "1.7917",
+            "pdb_path": "outputs/vis_20260519_114243/vis_010400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "10600",
+            "score": "0.6354",
+            "pdb_path": "outputs/vis_20260519_114243/vis_010600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "10800",
+            "score": "0.6521",
+            "pdb_path": "outputs/vis_20260519_114243/vis_010800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "11000",
+            "score": "0.5653",
+            "pdb_path": "outputs/vis_20260519_114243/vis_011000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "11200",
+            "score": "0.4713",
+            "pdb_path": "outputs/vis_20260519_114243/vis_011200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "11400",
+            "score": "0.5471",
+            "pdb_path": "outputs/vis_20260519_114243/vis_011400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "11600",
+            "score": "0.5277",
+            "pdb_path": "outputs/vis_20260519_114243/vis_011600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "11800",
+            "score": "0.873",
+            "pdb_path": "outputs/vis_20260519_114243/vis_011800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "12000",
+            "score": "0.5258",
+            "pdb_path": "outputs/vis_20260519_114243/vis_012000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "12200",
+            "score": "0.5223",
+            "pdb_path": "outputs/vis_20260519_114243/vis_012200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "12400",
+            "score": "0.3819",
+            "pdb_path": "outputs/vis_20260519_114243/vis_012400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "12600",
+            "score": "1.1128",
+            "pdb_path": "outputs/vis_20260519_114243/vis_012600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "12800",
+            "score": "0.5741",
+            "pdb_path": "outputs/vis_20260519_114243/vis_012800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "13000",
+            "score": "0.6248",
+            "pdb_path": "outputs/vis_20260519_114243/vis_013000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "13200",
+            "score": "0.5828",
+            "pdb_path": "outputs/vis_20260519_114243/vis_013200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "13400",
+            "score": "0.5126",
+            "pdb_path": "outputs/vis_20260519_114243/vis_013400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "13600",
+            "score": "0.7767",
+            "pdb_path": "outputs/vis_20260519_114243/vis_013600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "13800",
+            "score": "0.5638",
+            "pdb_path": "outputs/vis_20260519_114243/vis_013800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "14000",
+            "score": "0.575",
+            "pdb_path": "outputs/vis_20260519_114243/vis_014000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "14200",
+            "score": "0.5682",
+            "pdb_path": "outputs/vis_20260519_114243/vis_014200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "14400",
+            "score": "1.2829",
+            "pdb_path": "outputs/vis_20260519_114243/vis_014400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "14600",
+            "score": "0.6472",
+            "pdb_path": "outputs/vis_20260519_114243/vis_014600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "14800",
+            "score": "0.5367",
+            "pdb_path": "outputs/vis_20260519_114243/vis_014800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "15000",
+            "score": "0.4563",
+            "pdb_path": "outputs/vis_20260519_114243/vis_015000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "15200",
+            "score": "0.6283",
+            "pdb_path": "outputs/vis_20260519_114243/vis_015200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "15400",
+            "score": "0.6904",
+            "pdb_path": "outputs/vis_20260519_114243/vis_015400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "15600",
+            "score": "0.5924",
+            "pdb_path": "outputs/vis_20260519_114243/vis_015600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "15800",
+            "score": "0.6244",
+            "pdb_path": "outputs/vis_20260519_114243/vis_015800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "16000",
+            "score": "0.6587",
+            "pdb_path": "outputs/vis_20260519_114243/vis_016000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "16200",
+            "score": "0.5667",
+            "pdb_path": "outputs/vis_20260519_114243/vis_016200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "16400",
+            "score": "0.6928",
+            "pdb_path": "outputs/vis_20260519_114243/vis_016400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "16600",
+            "score": "0.579",
+            "pdb_path": "outputs/vis_20260519_114243/vis_016600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "16800",
+            "score": "0.5028",
+            "pdb_path": "outputs/vis_20260519_114243/vis_016800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "17000",
+            "score": "0.5213",
+            "pdb_path": "outputs/vis_20260519_114243/vis_017000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "17200",
+            "score": "0.63",
+            "pdb_path": "outputs/vis_20260519_114243/vis_017200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "17400",
+            "score": "2.2713",
+            "pdb_path": "outputs/vis_20260519_114243/vis_017400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "17600",
+            "score": "0.5539",
+            "pdb_path": "outputs/vis_20260519_114243/vis_017600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "17800",
+            "score": "2.0696",
+            "pdb_path": "outputs/vis_20260519_114243/vis_017800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "18000",
+            "score": "0.4292",
+            "pdb_path": "outputs/vis_20260519_114243/vis_018000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "18200",
+            "score": "0.5629",
+            "pdb_path": "outputs/vis_20260519_114243/vis_018200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "18400",
+            "score": "0.485",
+            "pdb_path": "outputs/vis_20260519_114243/vis_018400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "18600",
+            "score": "0.637",
+            "pdb_path": "outputs/vis_20260519_114243/vis_018600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "18800",
+            "score": "0.5475",
+            "pdb_path": "outputs/vis_20260519_114243/vis_018800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "19000",
+            "score": "0.485",
+            "pdb_path": "outputs/vis_20260519_114243/vis_019000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "19200",
+            "score": "0.6137",
+            "pdb_path": "outputs/vis_20260519_114243/vis_019200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "19400",
+            "score": "0.4615",
+            "pdb_path": "outputs/vis_20260519_114243/vis_019400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "19600",
+            "score": "0.5379",
+            "pdb_path": "outputs/vis_20260519_114243/vis_019600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "19800",
+            "score": "0.3977",
+            "pdb_path": "outputs/vis_20260519_114243/vis_019800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "20000",
+            "score": "0.6603",
+            "pdb_path": "outputs/vis_20260519_114243/vis_020000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "20200",
+            "score": "2.8136",
+            "pdb_path": "outputs/vis_20260519_114243/vis_020200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "20400",
+            "score": "1.0363",
+            "pdb_path": "outputs/vis_20260519_114243/vis_020400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "20600",
+            "score": "0.4972",
+            "pdb_path": "outputs/vis_20260519_114243/vis_020600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "20800",
+            "score": "0.5254",
+            "pdb_path": "outputs/vis_20260519_114243/vis_020800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "21000",
+            "score": "0.4128",
+            "pdb_path": "outputs/vis_20260519_114243/vis_021000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "21200",
+            "score": "0.5703",
+            "pdb_path": "outputs/vis_20260519_114243/vis_021200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "21400",
+            "score": "0.3457",
+            "pdb_path": "outputs/vis_20260519_114243/vis_021400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "21600",
+            "score": "0.4949",
+            "pdb_path": "outputs/vis_20260519_114243/vis_021600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "21800",
+            "score": "1.6812",
+            "pdb_path": "outputs/vis_20260519_114243/vis_021800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "22000",
+            "score": "0.6045",
+            "pdb_path": "outputs/vis_20260519_114243/vis_022000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "22200",
+            "score": "0.3691",
+            "pdb_path": "outputs/vis_20260519_114243/vis_022200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "22400",
+            "score": "0.6716",
+            "pdb_path": "outputs/vis_20260519_114243/vis_022400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "22600",
+            "score": "0.5393",
+            "pdb_path": "outputs/vis_20260519_114243/vis_022600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "22800",
+            "score": "1.0781",
+            "pdb_path": "outputs/vis_20260519_114243/vis_022800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "23000",
+            "score": "0.5311",
+            "pdb_path": "outputs/vis_20260519_114243/vis_023000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "23200",
+            "score": "0.9195",
+            "pdb_path": "outputs/vis_20260519_114243/vis_023200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "23400",
+            "score": "0.5209",
+            "pdb_path": "outputs/vis_20260519_114243/vis_023400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "23600",
+            "score": "0.4727",
+            "pdb_path": "outputs/vis_20260519_114243/vis_023600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "23800",
+            "score": "0.6718",
+            "pdb_path": "outputs/vis_20260519_114243/vis_023800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "24000",
+            "score": "0.851",
+            "pdb_path": "outputs/vis_20260519_114243/vis_024000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "24200",
+            "score": "0.6449",
+            "pdb_path": "outputs/vis_20260519_114243/vis_024200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "24400",
+            "score": "1.6228",
+            "pdb_path": "outputs/vis_20260519_114243/vis_024400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "24600",
+            "score": "0.6742",
+            "pdb_path": "outputs/vis_20260519_114243/vis_024600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "24800",
+            "score": "0.5509",
+            "pdb_path": "outputs/vis_20260519_114243/vis_024800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "25000",
+            "score": "0.7202",
+            "pdb_path": "outputs/vis_20260519_114243/vis_025000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "25200",
+            "score": "0.5864",
+            "pdb_path": "outputs/vis_20260519_114243/vis_025200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "25400",
+            "score": "0.5771",
+            "pdb_path": "outputs/vis_20260519_114243/vis_025400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "25600",
+            "score": "0.6132",
+            "pdb_path": "outputs/vis_20260519_114243/vis_025600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "25800",
+            "score": "0.4871",
+            "pdb_path": "outputs/vis_20260519_114243/vis_025800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "26000",
+            "score": "0.5162",
+            "pdb_path": "outputs/vis_20260519_114243/vis_026000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "26200",
+            "score": "0.6483",
+            "pdb_path": "outputs/vis_20260519_114243/vis_026200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "26400",
+            "score": "0.571",
+            "pdb_path": "outputs/vis_20260519_114243/vis_026400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "26600",
+            "score": "0.6076",
+            "pdb_path": "outputs/vis_20260519_114243/vis_026600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "26800",
+            "score": "0.4994",
+            "pdb_path": "outputs/vis_20260519_114243/vis_026800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "27000",
+            "score": "0.7026",
+            "pdb_path": "outputs/vis_20260519_114243/vis_027000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "27200",
+            "score": "0.5477",
+            "pdb_path": "outputs/vis_20260519_114243/vis_027200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "27400",
+            "score": "0.6954",
+            "pdb_path": "outputs/vis_20260519_114243/vis_027400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "27600",
+            "score": "0.5554",
+            "pdb_path": "outputs/vis_20260519_114243/vis_027600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "27800",
+            "score": "0.6268",
+            "pdb_path": "outputs/vis_20260519_114243/vis_027800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "28000",
+            "score": "0.8107",
+            "pdb_path": "outputs/vis_20260519_114243/vis_028000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "28200",
+            "score": "0.6198",
+            "pdb_path": "outputs/vis_20260519_114243/vis_028200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "28400",
+            "score": "0.5473",
+            "pdb_path": "outputs/vis_20260519_114243/vis_028400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "28600",
+            "score": "1.1718",
+            "pdb_path": "outputs/vis_20260519_114243/vis_028600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "28800",
+            "score": "0.5225",
+            "pdb_path": "outputs/vis_20260519_114243/vis_028800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "29000",
+            "score": "0.6949",
+            "pdb_path": "outputs/vis_20260519_114243/vis_029000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "29200",
+            "score": "0.6504",
+            "pdb_path": "outputs/vis_20260519_114243/vis_029200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "29400",
+            "score": "0.5825",
+            "pdb_path": "outputs/vis_20260519_114243/vis_029400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "29600",
+            "score": "0.942",
+            "pdb_path": "outputs/vis_20260519_114243/vis_029600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "29800",
+            "score": "0.6738",
+            "pdb_path": "outputs/vis_20260519_114243/vis_029800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "30000",
+            "score": "1.1671",
+            "pdb_path": "outputs/vis_20260519_114243/vis_030000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "30200",
+            "score": "2.4658",
+            "pdb_path": "outputs/vis_20260519_114243/vis_030200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "30400",
+            "score": "0.9258",
+            "pdb_path": "outputs/vis_20260519_114243/vis_030400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "30600",
+            "score": "0.5285",
+            "pdb_path": "outputs/vis_20260519_114243/vis_030600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "30800",
+            "score": "0.4753",
+            "pdb_path": "outputs/vis_20260519_114243/vis_030800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "31000",
+            "score": "0.4109",
+            "pdb_path": "outputs/vis_20260519_114243/vis_031000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "31200",
+            "score": "0.5073",
+            "pdb_path": "outputs/vis_20260519_114243/vis_031200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "31400",
+            "score": "0.7605",
+            "pdb_path": "outputs/vis_20260519_114243/vis_031400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "31600",
+            "score": "0.819",
+            "pdb_path": "outputs/vis_20260519_114243/vis_031600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "31800",
+            "score": "0.5164",
+            "pdb_path": "outputs/vis_20260519_114243/vis_031800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "32000",
+            "score": "1.2548",
+            "pdb_path": "outputs/vis_20260519_114243/vis_032000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "32200",
+            "score": "1.0635",
+            "pdb_path": "outputs/vis_20260519_114243/vis_032200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "32400",
+            "score": "0.5912",
+            "pdb_path": "outputs/vis_20260519_114243/vis_032400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "32600",
+            "score": "0.5179",
+            "pdb_path": "outputs/vis_20260519_114243/vis_032600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "32800",
+            "score": "0.4774",
+            "pdb_path": "outputs/vis_20260519_114243/vis_032800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "33000",
+            "score": "0.6946",
+            "pdb_path": "outputs/vis_20260519_114243/vis_033000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "33200",
+            "score": "0.5361",
+            "pdb_path": "outputs/vis_20260519_114243/vis_033200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "33400",
+            "score": "0.6489",
+            "pdb_path": "outputs/vis_20260519_114243/vis_033400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "33600",
+            "score": "0.5887",
+            "pdb_path": "outputs/vis_20260519_114243/vis_033600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "33800",
+            "score": "0.6727",
+            "pdb_path": "outputs/vis_20260519_114243/vis_033800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "34000",
+            "score": "0.6545",
+            "pdb_path": "outputs/vis_20260519_114243/vis_034000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "34200",
+            "score": "0.5451",
+            "pdb_path": "outputs/vis_20260519_114243/vis_034200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "34400",
+            "score": "0.4735",
+            "pdb_path": "outputs/vis_20260519_114243/vis_034400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "34600",
+            "score": "0.5865",
+            "pdb_path": "outputs/vis_20260519_114243/vis_034600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "34800",
+            "score": "0.5048",
+            "pdb_path": "outputs/vis_20260519_114243/vis_034800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "35000",
+            "score": "0.7672",
+            "pdb_path": "outputs/vis_20260519_114243/vis_035000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "35200",
+            "score": "0.5197",
+            "pdb_path": "outputs/vis_20260519_114243/vis_035200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "35400",
+            "score": "0.6324",
+            "pdb_path": "outputs/vis_20260519_114243/vis_035400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "35600",
+            "score": "0.7822",
+            "pdb_path": "outputs/vis_20260519_114243/vis_035600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "35800",
+            "score": "0.573",
+            "pdb_path": "outputs/vis_20260519_114243/vis_035800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "36000",
+            "score": "0.5297",
+            "pdb_path": "outputs/vis_20260519_114243/vis_036000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "36200",
+            "score": "0.4369",
+            "pdb_path": "outputs/vis_20260519_114243/vis_036200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "36400",
+            "score": "0.6103",
+            "pdb_path": "outputs/vis_20260519_114243/vis_036400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "36600",
+            "score": "0.4883",
+            "pdb_path": "outputs/vis_20260519_114243/vis_036600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "36800",
+            "score": "0.4665",
+            "pdb_path": "outputs/vis_20260519_114243/vis_036800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "37000",
+            "score": "0.8086",
+            "pdb_path": "outputs/vis_20260519_114243/vis_037000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "37200",
+            "score": "0.597",
+            "pdb_path": "outputs/vis_20260519_114243/vis_037200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "37400",
+            "score": "0.6704",
+            "pdb_path": "outputs/vis_20260519_114243/vis_037400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "37600",
+            "score": "0.5078",
+            "pdb_path": "outputs/vis_20260519_114243/vis_037600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "37800",
+            "score": "0.6436",
+            "pdb_path": "outputs/vis_20260519_114243/vis_037800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "38000",
+            "score": "0.5396",
+            "pdb_path": "outputs/vis_20260519_114243/vis_038000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "38200",
+            "score": "1.3933",
+            "pdb_path": "outputs/vis_20260519_114243/vis_038200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "38400",
+            "score": "0.4807",
+            "pdb_path": "outputs/vis_20260519_114243/vis_038400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "38600",
+            "score": "0.8994",
+            "pdb_path": "outputs/vis_20260519_114243/vis_038600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "38800",
+            "score": "0.6016",
+            "pdb_path": "outputs/vis_20260519_114243/vis_038800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "39000",
+            "score": "0.5074",
+            "pdb_path": "outputs/vis_20260519_114243/vis_039000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "39200",
+            "score": "0.8382",
+            "pdb_path": "outputs/vis_20260519_114243/vis_039200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "39400",
+            "score": "0.6305",
+            "pdb_path": "outputs/vis_20260519_114243/vis_039400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "39600",
+            "score": "3.2729",
+            "pdb_path": "outputs/vis_20260519_114243/vis_039600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "39800",
+            "score": "0.5505",
+            "pdb_path": "outputs/vis_20260519_114243/vis_039800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "40000",
+            "score": "0.3813",
+            "pdb_path": "outputs/vis_20260519_114243/vis_040000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "40200",
+            "score": "2.7868",
+            "pdb_path": "outputs/vis_20260519_114243/vis_040200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "40400",
+            "score": "0.9047",
+            "pdb_path": "outputs/vis_20260519_114243/vis_040400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "40600",
+            "score": "1.167",
+            "pdb_path": "outputs/vis_20260519_114243/vis_040600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "40800",
+            "score": "0.5035",
+            "pdb_path": "outputs/vis_20260519_114243/vis_040800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "41000",
+            "score": "0.5435",
+            "pdb_path": "outputs/vis_20260519_114243/vis_041000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "41200",
+            "score": "0.7651",
+            "pdb_path": "outputs/vis_20260519_114243/vis_041200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "41400",
+            "score": "0.501",
+            "pdb_path": "outputs/vis_20260519_114243/vis_041400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "41600",
+            "score": "0.5658",
+            "pdb_path": "outputs/vis_20260519_114243/vis_041600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "41800",
+            "score": "0.6985",
+            "pdb_path": "outputs/vis_20260519_114243/vis_041800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "42000",
+            "score": "0.5436",
+            "pdb_path": "outputs/vis_20260519_114243/vis_042000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "42200",
+            "score": "0.6435",
+            "pdb_path": "outputs/vis_20260519_114243/vis_042200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "42400",
+            "score": "0.5068",
+            "pdb_path": "outputs/vis_20260519_114243/vis_042400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "42600",
+            "score": "0.6921",
+            "pdb_path": "outputs/vis_20260519_114243/vis_042600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "42800",
+            "score": "0.559",
+            "pdb_path": "outputs/vis_20260519_114243/vis_042800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "43000",
+            "score": "0.6737",
+            "pdb_path": "outputs/vis_20260519_114243/vis_043000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "43200",
+            "score": "0.7287",
+            "pdb_path": "outputs/vis_20260519_114243/vis_043200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "43400",
+            "score": "0.5855",
+            "pdb_path": "outputs/vis_20260519_114243/vis_043400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "43600",
+            "score": "0.515",
+            "pdb_path": "outputs/vis_20260519_114243/vis_043600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "43800",
+            "score": "0.5966",
+            "pdb_path": "outputs/vis_20260519_114243/vis_043800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "44000",
+            "score": "0.6704",
+            "pdb_path": "outputs/vis_20260519_114243/vis_044000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "44200",
+            "score": "0.6406",
+            "pdb_path": "outputs/vis_20260519_114243/vis_044200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "44400",
+            "score": "0.5073",
+            "pdb_path": "outputs/vis_20260519_114243/vis_044400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "44600",
+            "score": "0.5161",
+            "pdb_path": "outputs/vis_20260519_114243/vis_044600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "44800",
+            "score": "0.7477",
+            "pdb_path": "outputs/vis_20260519_114243/vis_044800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "45000",
+            "score": "0.5815",
+            "pdb_path": "outputs/vis_20260519_114243/vis_045000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "45200",
+            "score": "0.7098",
+            "pdb_path": "outputs/vis_20260519_114243/vis_045200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "45400",
+            "score": "0.5432",
+            "pdb_path": "outputs/vis_20260519_114243/vis_045400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "45600",
+            "score": "0.5959",
+            "pdb_path": "outputs/vis_20260519_114243/vis_045600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "45800",
+            "score": "0.5165",
+            "pdb_path": "outputs/vis_20260519_114243/vis_045800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "46000",
+            "score": "0.6554",
+            "pdb_path": "outputs/vis_20260519_114243/vis_046000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "46200",
+            "score": "0.5188",
+            "pdb_path": "outputs/vis_20260519_114243/vis_046200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "46400",
+            "score": "0.5428",
+            "pdb_path": "outputs/vis_20260519_114243/vis_046400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "46600",
+            "score": "0.6568",
+            "pdb_path": "outputs/vis_20260519_114243/vis_046600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "46800",
+            "score": "0.5777",
+            "pdb_path": "outputs/vis_20260519_114243/vis_046800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "47000",
+            "score": "0.5533",
+            "pdb_path": "outputs/vis_20260519_114243/vis_047000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "47200",
+            "score": "0.4956",
+            "pdb_path": "outputs/vis_20260519_114243/vis_047200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "47400",
+            "score": "0.704",
+            "pdb_path": "outputs/vis_20260519_114243/vis_047400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "47600",
+            "score": "0.9299",
+            "pdb_path": "outputs/vis_20260519_114243/vis_047600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "47800",
+            "score": "0.5572",
+            "pdb_path": "outputs/vis_20260519_114243/vis_047800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "48000",
+            "score": "1.2286",
+            "pdb_path": "outputs/vis_20260519_114243/vis_048000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "48200",
+            "score": "0.5931",
+            "pdb_path": "outputs/vis_20260519_114243/vis_048200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "48400",
+            "score": "0.4911",
+            "pdb_path": "outputs/vis_20260519_114243/vis_048400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "48600",
+            "score": "0.4796",
+            "pdb_path": "outputs/vis_20260519_114243/vis_048600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "48800",
+            "score": "0.6187",
+            "pdb_path": "outputs/vis_20260519_114243/vis_048800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "49000",
+            "score": "0.4826",
+            "pdb_path": "outputs/vis_20260519_114243/vis_049000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "49200",
+            "score": "0.6164",
+            "pdb_path": "outputs/vis_20260519_114243/vis_049200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "49400",
+            "score": "0.9049",
+            "pdb_path": "outputs/vis_20260519_114243/vis_049400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "49600",
+            "score": "0.6803",
+            "pdb_path": "outputs/vis_20260519_114243/vis_049600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "49800",
+            "score": "0.571",
+            "pdb_path": "outputs/vis_20260519_114243/vis_049800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "50000",
+            "score": "0.6312",
+            "pdb_path": "outputs/vis_20260519_114243/vis_050000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "50200",
+            "score": "1.0403",
+            "pdb_path": "outputs/vis_20260519_114243/vis_050200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "50400",
+            "score": "0.4977",
+            "pdb_path": "outputs/vis_20260519_114243/vis_050400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "50600",
+            "score": "0.552",
+            "pdb_path": "outputs/vis_20260519_114243/vis_050600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "50800",
+            "score": "0.913",
+            "pdb_path": "outputs/vis_20260519_114243/vis_050800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "51000",
+            "score": "0.7248",
+            "pdb_path": "outputs/vis_20260519_114243/vis_051000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "51200",
+            "score": "0.5535",
+            "pdb_path": "outputs/vis_20260519_114243/vis_051200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "51400",
+            "score": "0.4856",
+            "pdb_path": "outputs/vis_20260519_114243/vis_051400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "51600",
+            "score": "0.6438",
+            "pdb_path": "outputs/vis_20260519_114243/vis_051600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "51800",
+            "score": "0.536",
+            "pdb_path": "outputs/vis_20260519_114243/vis_051800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "52000",
+            "score": "0.7283",
+            "pdb_path": "outputs/vis_20260519_114243/vis_052000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "52200",
+            "score": "0.5778",
+            "pdb_path": "outputs/vis_20260519_114243/vis_052200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "52400",
+            "score": "0.5023",
+            "pdb_path": "outputs/vis_20260519_114243/vis_052400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "52600",
+            "score": "0.5885",
+            "pdb_path": "outputs/vis_20260519_114243/vis_052600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "52800",
+            "score": "0.508",
+            "pdb_path": "outputs/vis_20260519_114243/vis_052800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "53000",
+            "score": "0.6259",
+            "pdb_path": "outputs/vis_20260519_114243/vis_053000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "53200",
+            "score": "0.5888",
+            "pdb_path": "outputs/vis_20260519_114243/vis_053200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "53400",
+            "score": "0.9512",
+            "pdb_path": "outputs/vis_20260519_114243/vis_053400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "53600",
+            "score": "0.5246",
+            "pdb_path": "outputs/vis_20260519_114243/vis_053600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "53800",
+            "score": "0.681",
+            "pdb_path": "outputs/vis_20260519_114243/vis_053800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "54000",
+            "score": "0.5252",
+            "pdb_path": "outputs/vis_20260519_114243/vis_054000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "54200",
+            "score": "0.9643",
+            "pdb_path": "outputs/vis_20260519_114243/vis_054200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "54400",
+            "score": "0.4994",
+            "pdb_path": "outputs/vis_20260519_114243/vis_054400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "54600",
+            "score": "0.4785",
+            "pdb_path": "outputs/vis_20260519_114243/vis_054600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "54800",
+            "score": "0.7747",
+            "pdb_path": "outputs/vis_20260519_114243/vis_054800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "55000",
+            "score": "0.6377",
+            "pdb_path": "outputs/vis_20260519_114243/vis_055000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "55200",
+            "score": "0.5719",
+            "pdb_path": "outputs/vis_20260519_114243/vis_055200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "55400",
+            "score": "1.0373",
+            "pdb_path": "outputs/vis_20260519_114243/vis_055400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "55600",
+            "score": "0.5035",
+            "pdb_path": "outputs/vis_20260519_114243/vis_055600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "55800",
+            "score": "0.4628",
+            "pdb_path": "outputs/vis_20260519_114243/vis_055800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "56000",
+            "score": "0.5923",
+            "pdb_path": "outputs/vis_20260519_114243/vis_056000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "56200",
+            "score": "0.3492",
+            "pdb_path": "outputs/vis_20260519_114243/vis_056200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "56400",
+            "score": "0.6767",
+            "pdb_path": "outputs/vis_20260519_114243/vis_056400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "56600",
+            "score": "0.5792",
+            "pdb_path": "outputs/vis_20260519_114243/vis_056600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "56800",
+            "score": "0.5901",
+            "pdb_path": "outputs/vis_20260519_114243/vis_056800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "57000",
+            "score": "1.8041",
+            "pdb_path": "outputs/vis_20260519_114243/vis_057000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "57200",
+            "score": "0.7321",
+            "pdb_path": "outputs/vis_20260519_114243/vis_057200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "57400",
+            "score": "0.5866",
+            "pdb_path": "outputs/vis_20260519_114243/vis_057400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "57600",
+            "score": "0.5345",
+            "pdb_path": "outputs/vis_20260519_114243/vis_057600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "57800",
+            "score": "0.5191",
+            "pdb_path": "outputs/vis_20260519_114243/vis_057800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "58000",
+            "score": "0.5667",
+            "pdb_path": "outputs/vis_20260519_114243/vis_058000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "58200",
+            "score": "0.5854",
+            "pdb_path": "outputs/vis_20260519_114243/vis_058200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "58400",
+            "score": "0.4946",
+            "pdb_path": "outputs/vis_20260519_114243/vis_058400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "58600",
+            "score": "0.5493",
+            "pdb_path": "outputs/vis_20260519_114243/vis_058600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "58800",
+            "score": "0.6085",
+            "pdb_path": "outputs/vis_20260519_114243/vis_058800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "59000",
+            "score": "0.4966",
+            "pdb_path": "outputs/vis_20260519_114243/vis_059000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "59200",
+            "score": "0.6333",
+            "pdb_path": "outputs/vis_20260519_114243/vis_059200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "59400",
+            "score": "0.531",
+            "pdb_path": "outputs/vis_20260519_114243/vis_059400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "59600",
+            "score": "0.4662",
+            "pdb_path": "outputs/vis_20260519_114243/vis_059600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "59800",
+            "score": "0.6298",
+            "pdb_path": "outputs/vis_20260519_114243/vis_059800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "60000",
+            "score": "0.4988",
+            "pdb_path": "outputs/vis_20260519_114243/vis_060000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "60200",
+            "score": "1.3301",
+            "pdb_path": "outputs/vis_20260519_114243/vis_060200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "60400",
+            "score": "0.9398",
+            "pdb_path": "outputs/vis_20260519_114243/vis_060400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "60600",
+            "score": "0.6022",
+            "pdb_path": "outputs/vis_20260519_114243/vis_060600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "60800",
+            "score": "0.6318",
+            "pdb_path": "outputs/vis_20260519_114243/vis_060800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "61000",
+            "score": "0.9858",
+            "pdb_path": "outputs/vis_20260519_114243/vis_061000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "61200",
+            "score": "0.6234",
+            "pdb_path": "outputs/vis_20260519_114243/vis_061200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "61400",
+            "score": "0.7163",
+            "pdb_path": "outputs/vis_20260519_114243/vis_061400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "61600",
+            "score": "1.3195",
+            "pdb_path": "outputs/vis_20260519_114243/vis_061600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "61800",
+            "score": "0.6277",
+            "pdb_path": "outputs/vis_20260519_114243/vis_061800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "62000",
+            "score": "0.5702",
+            "pdb_path": "outputs/vis_20260519_114243/vis_062000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "62200",
+            "score": "0.4755",
+            "pdb_path": "outputs/vis_20260519_114243/vis_062200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "62400",
+            "score": "0.7353",
+            "pdb_path": "outputs/vis_20260519_114243/vis_062400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "62600",
+            "score": "0.5749",
+            "pdb_path": "outputs/vis_20260519_114243/vis_062600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "62800",
+            "score": "0.6261",
+            "pdb_path": "outputs/vis_20260519_114243/vis_062800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "63000",
+            "score": "0.5256",
+            "pdb_path": "outputs/vis_20260519_114243/vis_063000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "63200",
+            "score": "0.6819",
+            "pdb_path": "outputs/vis_20260519_114243/vis_063200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "63400",
+            "score": "0.5091",
+            "pdb_path": "outputs/vis_20260519_114243/vis_063400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "63600",
+            "score": "0.4359",
+            "pdb_path": "outputs/vis_20260519_114243/vis_063600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "63800",
+            "score": "0.445",
+            "pdb_path": "outputs/vis_20260519_114243/vis_063800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "64000",
+            "score": "0.6046",
+            "pdb_path": "outputs/vis_20260519_114243/vis_064000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "64200",
+            "score": "0.5044",
+            "pdb_path": "outputs/vis_20260519_114243/vis_064200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "64400",
+            "score": "0.4645",
+            "pdb_path": "outputs/vis_20260519_114243/vis_064400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "64600",
+            "score": "0.7216",
+            "pdb_path": "outputs/vis_20260519_114243/vis_064600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "64800",
+            "score": "0.5679",
+            "pdb_path": "outputs/vis_20260519_114243/vis_064800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "65000",
+            "score": "0.4988",
+            "pdb_path": "outputs/vis_20260519_114243/vis_065000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "65200",
+            "score": "0.7302",
+            "pdb_path": "outputs/vis_20260519_114243/vis_065200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "65400",
+            "score": "0.5988",
+            "pdb_path": "outputs/vis_20260519_114243/vis_065400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "65600",
+            "score": "0.5279",
+            "pdb_path": "outputs/vis_20260519_114243/vis_065600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "65800",
+            "score": "0.5582",
+            "pdb_path": "outputs/vis_20260519_114243/vis_065800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "66000",
+            "score": "0.5168",
+            "pdb_path": "outputs/vis_20260519_114243/vis_066000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "66200",
+            "score": "0.5639",
+            "pdb_path": "outputs/vis_20260519_114243/vis_066200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "66400",
+            "score": "0.6132",
+            "pdb_path": "outputs/vis_20260519_114243/vis_066400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "66600",
+            "score": "0.4706",
+            "pdb_path": "outputs/vis_20260519_114243/vis_066600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "66800",
+            "score": "0.6979",
+            "pdb_path": "outputs/vis_20260519_114243/vis_066800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "67000",
+            "score": "0.5386",
+            "pdb_path": "outputs/vis_20260519_114243/vis_067000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "67200",
+            "score": "0.672",
+            "pdb_path": "outputs/vis_20260519_114243/vis_067200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "67400",
+            "score": "1.7853",
+            "pdb_path": "outputs/vis_20260519_114243/vis_067400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "67600",
+            "score": "0.6271",
+            "pdb_path": "outputs/vis_20260519_114243/vis_067600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "67800",
+            "score": "0.5334",
+            "pdb_path": "outputs/vis_20260519_114243/vis_067800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "68000",
+            "score": "0.4823",
+            "pdb_path": "outputs/vis_20260519_114243/vis_068000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "68200",
+            "score": "2.5614",
+            "pdb_path": "outputs/vis_20260519_114243/vis_068200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "68400",
+            "score": "0.5758",
+            "pdb_path": "outputs/vis_20260519_114243/vis_068400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "68600",
+            "score": "0.4854",
+            "pdb_path": "outputs/vis_20260519_114243/vis_068600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "68800",
+            "score": "0.8953",
+            "pdb_path": "outputs/vis_20260519_114243/vis_068800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "69000",
+            "score": "0.5981",
+            "pdb_path": "outputs/vis_20260519_114243/vis_069000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "69200",
+            "score": "0.7096",
+            "pdb_path": "outputs/vis_20260519_114243/vis_069200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "69400",
+            "score": "0.604",
+            "pdb_path": "outputs/vis_20260519_114243/vis_069400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "69600",
+            "score": "0.5546",
+            "pdb_path": "outputs/vis_20260519_114243/vis_069600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "69800",
+            "score": "0.7589",
+            "pdb_path": "outputs/vis_20260519_114243/vis_069800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "70000",
+            "score": "0.6021",
+            "pdb_path": "outputs/vis_20260519_114243/vis_070000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "70200",
+            "score": "0.7748",
+            "pdb_path": "outputs/vis_20260519_114243/vis_070200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "70400",
+            "score": "0.5285",
+            "pdb_path": "outputs/vis_20260519_114243/vis_070400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "70600",
+            "score": "0.5859",
+            "pdb_path": "outputs/vis_20260519_114243/vis_070600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "70800",
+            "score": "0.3074",
+            "pdb_path": "outputs/vis_20260519_114243/vis_070800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "71000",
+            "score": "0.4489",
+            "pdb_path": "outputs/vis_20260519_114243/vis_071000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "71200",
+            "score": "0.5617",
+            "pdb_path": "outputs/vis_20260519_114243/vis_071200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "71400",
+            "score": "0.7568",
+            "pdb_path": "outputs/vis_20260519_114243/vis_071400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "71600",
+            "score": "0.6308",
+            "pdb_path": "outputs/vis_20260519_114243/vis_071600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "71800",
+            "score": "0.557",
+            "pdb_path": "outputs/vis_20260519_114243/vis_071800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "72000",
+            "score": "0.4854",
+            "pdb_path": "outputs/vis_20260519_114243/vis_072000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "72200",
+            "score": "0.412",
+            "pdb_path": "outputs/vis_20260519_114243/vis_072200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "72400",
+            "score": "0.528",
+            "pdb_path": "outputs/vis_20260519_114243/vis_072400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "72600",
+            "score": "0.67",
+            "pdb_path": "outputs/vis_20260519_114243/vis_072600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "72800",
+            "score": "0.2838",
+            "pdb_path": "outputs/vis_20260519_114243/vis_072800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "73000",
+            "score": "0.5767",
+            "pdb_path": "outputs/vis_20260519_114243/vis_073000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "73200",
+            "score": "0.7289",
+            "pdb_path": "outputs/vis_20260519_114243/vis_073200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "73400",
+            "score": "0.4083",
+            "pdb_path": "outputs/vis_20260519_114243/vis_073400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "73600",
+            "score": "0.6684",
+            "pdb_path": "outputs/vis_20260519_114243/vis_073600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "73800",
+            "score": "0.7812",
+            "pdb_path": "outputs/vis_20260519_114243/vis_073800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "74000",
+            "score": "0.5969",
+            "pdb_path": "outputs/vis_20260519_114243/vis_074000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "74200",
+            "score": "1.0063",
+            "pdb_path": "outputs/vis_20260519_114243/vis_074200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "74400",
+            "score": "0.5077",
+            "pdb_path": "outputs/vis_20260519_114243/vis_074400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "74600",
+            "score": "0.6257",
+            "pdb_path": "outputs/vis_20260519_114243/vis_074600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "74800",
+            "score": "0.5056",
+            "pdb_path": "outputs/vis_20260519_114243/vis_074800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "75000",
+            "score": "0.5513",
+            "pdb_path": "outputs/vis_20260519_114243/vis_075000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "75200",
+            "score": "0.6829",
+            "pdb_path": "outputs/vis_20260519_114243/vis_075200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "75400",
+            "score": "0.5795",
+            "pdb_path": "outputs/vis_20260519_114243/vis_075400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "75600",
+            "score": "0.5354",
+            "pdb_path": "outputs/vis_20260519_114243/vis_075600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "75800",
+            "score": "0.5394",
+            "pdb_path": "outputs/vis_20260519_114243/vis_075800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "76000",
+            "score": "0.5613",
+            "pdb_path": "outputs/vis_20260519_114243/vis_076000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "76200",
+            "score": "0.5044",
+            "pdb_path": "outputs/vis_20260519_114243/vis_076200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "76400",
+            "score": "0.6573",
+            "pdb_path": "outputs/vis_20260519_114243/vis_076400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "76600",
+            "score": "0.7284",
+            "pdb_path": "outputs/vis_20260519_114243/vis_076600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "76800",
+            "score": "0.5308",
+            "pdb_path": "outputs/vis_20260519_114243/vis_076800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "77000",
+            "score": "0.3426",
+            "pdb_path": "outputs/vis_20260519_114243/vis_077000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "77200",
+            "score": "0.5019",
+            "pdb_path": "outputs/vis_20260519_114243/vis_077200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "77400",
+            "score": "1.7335",
+            "pdb_path": "outputs/vis_20260519_114243/vis_077400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "77600",
+            "score": "0.5399",
+            "pdb_path": "outputs/vis_20260519_114243/vis_077600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "77800",
+            "score": "0.7005",
+            "pdb_path": "outputs/vis_20260519_114243/vis_077800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "78000",
+            "score": "0.5857",
+            "pdb_path": "outputs/vis_20260519_114243/vis_078000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "78200",
+            "score": "0.5131",
+            "pdb_path": "outputs/vis_20260519_114243/vis_078200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "78400",
+            "score": "1.743",
+            "pdb_path": "outputs/vis_20260519_114243/vis_078400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "78600",
+            "score": "0.5969",
+            "pdb_path": "outputs/vis_20260519_114243/vis_078600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "78800",
+            "score": "0.5403",
+            "pdb_path": "outputs/vis_20260519_114243/vis_078800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "79000",
+            "score": "0.7116",
+            "pdb_path": "outputs/vis_20260519_114243/vis_079000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "79200",
+            "score": "0.6934",
+            "pdb_path": "outputs/vis_20260519_114243/vis_079200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "79400",
+            "score": "0.6121",
+            "pdb_path": "outputs/vis_20260519_114243/vis_079400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "79600",
+            "score": "0.5584",
+            "pdb_path": "outputs/vis_20260519_114243/vis_079600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "79800",
+            "score": "0.4959",
+            "pdb_path": "outputs/vis_20260519_114243/vis_079800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "80000",
+            "score": "0.3411",
+            "pdb_path": "outputs/vis_20260519_114243/vis_080000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "80200",
+            "score": "1.6695",
+            "pdb_path": "outputs/vis_20260519_114243/vis_080200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "80400",
+            "score": "0.5559",
+            "pdb_path": "outputs/vis_20260519_114243/vis_080400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "80600",
+            "score": "0.5439",
+            "pdb_path": "outputs/vis_20260519_114243/vis_080600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "80800",
+            "score": "0.5233",
+            "pdb_path": "outputs/vis_20260519_114243/vis_080800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "81000",
+            "score": "0.5123",
+            "pdb_path": "outputs/vis_20260519_114243/vis_081000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "81200",
+            "score": "0.8494",
+            "pdb_path": "outputs/vis_20260519_114243/vis_081200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "81400",
+            "score": "0.5074",
+            "pdb_path": "outputs/vis_20260519_114243/vis_081400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "81600",
+            "score": "0.5954",
+            "pdb_path": "outputs/vis_20260519_114243/vis_081600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "81800",
+            "score": "0.506",
+            "pdb_path": "outputs/vis_20260519_114243/vis_081800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "82000",
+            "score": "0.5207",
+            "pdb_path": "outputs/vis_20260519_114243/vis_082000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "82200",
+            "score": "1.3277",
+            "pdb_path": "outputs/vis_20260519_114243/vis_082200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "82400",
+            "score": "0.5836",
+            "pdb_path": "outputs/vis_20260519_114243/vis_082400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "82600",
+            "score": "0.7532",
+            "pdb_path": "outputs/vis_20260519_114243/vis_082600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "82800",
+            "score": "0.5926",
+            "pdb_path": "outputs/vis_20260519_114243/vis_082800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "83000",
+            "score": "0.7112",
+            "pdb_path": "outputs/vis_20260519_114243/vis_083000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "83200",
+            "score": "2.0544",
+            "pdb_path": "outputs/vis_20260519_114243/vis_083200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "83400",
+            "score": "0.4201",
+            "pdb_path": "outputs/vis_20260519_114243/vis_083400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "83600",
+            "score": "1.0213",
+            "pdb_path": "outputs/vis_20260519_114243/vis_083600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "83800",
+            "score": "0.5058",
+            "pdb_path": "outputs/vis_20260519_114243/vis_083800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "84000",
+            "score": "0.4549",
+            "pdb_path": "outputs/vis_20260519_114243/vis_084000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "84200",
+            "score": "0.5969",
+            "pdb_path": "outputs/vis_20260519_114243/vis_084200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "84400",
+            "score": "0.5014",
+            "pdb_path": "outputs/vis_20260519_114243/vis_084400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "84600",
+            "score": "0.6976",
+            "pdb_path": "outputs/vis_20260519_114243/vis_084600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "84800",
+            "score": "2.0695",
+            "pdb_path": "outputs/vis_20260519_114243/vis_084800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "85000",
+            "score": "0.6665",
+            "pdb_path": "outputs/vis_20260519_114243/vis_085000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "85200",
+            "score": "0.5516",
+            "pdb_path": "outputs/vis_20260519_114243/vis_085200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "85400",
+            "score": "0.7011",
+            "pdb_path": "outputs/vis_20260519_114243/vis_085400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "85600",
+            "score": "0.5203",
+            "pdb_path": "outputs/vis_20260519_114243/vis_085600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "85800",
+            "score": "0.6107",
+            "pdb_path": "outputs/vis_20260519_114243/vis_085800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "86000",
+            "score": "0.5305",
+            "pdb_path": "outputs/vis_20260519_114243/vis_086000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "86200",
+            "score": "0.5519",
+            "pdb_path": "outputs/vis_20260519_114243/vis_086200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "86400",
+            "score": "0.6092",
+            "pdb_path": "outputs/vis_20260519_114243/vis_086400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "86600",
+            "score": "0.5231",
+            "pdb_path": "outputs/vis_20260519_114243/vis_086600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "86800",
+            "score": "0.5687",
+            "pdb_path": "outputs/vis_20260519_114243/vis_086800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "87000",
+            "score": "1.4621",
+            "pdb_path": "outputs/vis_20260519_114243/vis_087000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "87200",
+            "score": "0.6951",
+            "pdb_path": "outputs/vis_20260519_114243/vis_087200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "87400",
+            "score": "0.5245",
+            "pdb_path": "outputs/vis_20260519_114243/vis_087400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "87600",
+            "score": "0.9728",
+            "pdb_path": "outputs/vis_20260519_114243/vis_087600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "87800",
+            "score": "0.5707",
+            "pdb_path": "outputs/vis_20260519_114243/vis_087800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "88000",
+            "score": "0.4874",
+            "pdb_path": "outputs/vis_20260519_114243/vis_088000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "88200",
+            "score": "0.628",
+            "pdb_path": "outputs/vis_20260519_114243/vis_088200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "88400",
+            "score": "5.591",
+            "pdb_path": "outputs/vis_20260519_114243/vis_088400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "88600",
+            "score": "0.5368",
+            "pdb_path": "outputs/vis_20260519_114243/vis_088600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "88800",
+            "score": "0.8712",
+            "pdb_path": "outputs/vis_20260519_114243/vis_088800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "89000",
+            "score": "0.5702",
+            "pdb_path": "outputs/vis_20260519_114243/vis_089000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "89200",
+            "score": "1.7177",
+            "pdb_path": "outputs/vis_20260519_114243/vis_089200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "89400",
+            "score": "0.8122",
+            "pdb_path": "outputs/vis_20260519_114243/vis_089400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "89600",
+            "score": "0.6154",
+            "pdb_path": "outputs/vis_20260519_114243/vis_089600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "89800",
+            "score": "0.5501",
+            "pdb_path": "outputs/vis_20260519_114243/vis_089800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "90000",
+            "score": "0.5094",
+            "pdb_path": "outputs/vis_20260519_114243/vis_090000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "90200",
+            "score": "0.6932",
+            "pdb_path": "outputs/vis_20260519_114243/vis_090200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "90400",
+            "score": "0.6238",
+            "pdb_path": "outputs/vis_20260519_114243/vis_090400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "90600",
+            "score": "0.5661",
+            "pdb_path": "outputs/vis_20260519_114243/vis_090600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "90800",
+            "score": "0.5604",
+            "pdb_path": "outputs/vis_20260519_114243/vis_090800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "91000",
+            "score": "0.7337",
+            "pdb_path": "outputs/vis_20260519_114243/vis_091000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "91200",
+            "score": "0.4981",
+            "pdb_path": "outputs/vis_20260519_114243/vis_091200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "91400",
+            "score": "0.6252",
+            "pdb_path": "outputs/vis_20260519_114243/vis_091400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "91600",
+            "score": "0.5026",
+            "pdb_path": "outputs/vis_20260519_114243/vis_091600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "91800",
+            "score": "0.5723",
+            "pdb_path": "outputs/vis_20260519_114243/vis_091800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "92000",
+            "score": "0.6821",
+            "pdb_path": "outputs/vis_20260519_114243/vis_092000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "92200",
+            "score": "0.4968",
+            "pdb_path": "outputs/vis_20260519_114243/vis_092200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "92400",
+            "score": "0.7261",
+            "pdb_path": "outputs/vis_20260519_114243/vis_092400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "92600",
+            "score": "0.5112",
+            "pdb_path": "outputs/vis_20260519_114243/vis_092600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "92800",
+            "score": "0.4713",
+            "pdb_path": "outputs/vis_20260519_114243/vis_092800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "93000",
+            "score": "0.5326",
+            "pdb_path": "outputs/vis_20260519_114243/vis_093000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "93200",
+            "score": "0.8688",
+            "pdb_path": "outputs/vis_20260519_114243/vis_093200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "93400",
+            "score": "0.5613",
+            "pdb_path": "outputs/vis_20260519_114243/vis_093400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "93600",
+            "score": "0.8328",
+            "pdb_path": "outputs/vis_20260519_114243/vis_093600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "93800",
+            "score": "0.599",
+            "pdb_path": "outputs/vis_20260519_114243/vis_093800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "94000",
+            "score": "2.1142",
+            "pdb_path": "outputs/vis_20260519_114243/vis_094000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "94200",
+            "score": "0.5319",
+            "pdb_path": "outputs/vis_20260519_114243/vis_094200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "94400",
+            "score": "0.668",
+            "pdb_path": "outputs/vis_20260519_114243/vis_094400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "94600",
+            "score": "0.7104",
+            "pdb_path": "outputs/vis_20260519_114243/vis_094600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "94800",
+            "score": "1.0936",
+            "pdb_path": "outputs/vis_20260519_114243/vis_094800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "95000",
+            "score": "0.556",
+            "pdb_path": "outputs/vis_20260519_114243/vis_095000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "95200",
+            "score": "0.5026",
+            "pdb_path": "outputs/vis_20260519_114243/vis_095200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "95400",
+            "score": "0.6042",
+            "pdb_path": "outputs/vis_20260519_114243/vis_095400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "95600",
+            "score": "0.4911",
+            "pdb_path": "outputs/vis_20260519_114243/vis_095600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "95800",
+            "score": "0.6124",
+            "pdb_path": "outputs/vis_20260519_114243/vis_095800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "96000",
+            "score": "0.5356",
+            "pdb_path": "outputs/vis_20260519_114243/vis_096000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "96200",
+            "score": "1.6228",
+            "pdb_path": "outputs/vis_20260519_114243/vis_096200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "96400",
+            "score": "0.4944",
+            "pdb_path": "outputs/vis_20260519_114243/vis_096400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "96600",
+            "score": "1.3475",
+            "pdb_path": "outputs/vis_20260519_114243/vis_096600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "96800",
+            "score": "0.5065",
+            "pdb_path": "outputs/vis_20260519_114243/vis_096800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "97000",
+            "score": "0.6476",
+            "pdb_path": "outputs/vis_20260519_114243/vis_097000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "97200",
+            "score": "0.5232",
+            "pdb_path": "outputs/vis_20260519_114243/vis_097200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "97400",
+            "score": "0.6028",
+            "pdb_path": "outputs/vis_20260519_114243/vis_097400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "97600",
+            "score": "0.6158",
+            "pdb_path": "outputs/vis_20260519_114243/vis_097600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "97800",
+            "score": "0.5337",
+            "pdb_path": "outputs/vis_20260519_114243/vis_097800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "98000",
+            "score": "0.4843",
+            "pdb_path": "outputs/vis_20260519_114243/vis_098000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "98200",
+            "score": "0.6253",
+            "pdb_path": "outputs/vis_20260519_114243/vis_098200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "98400",
+            "score": "0.5253",
+            "pdb_path": "outputs/vis_20260519_114243/vis_098400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "98600",
+            "score": "4.7192",
+            "pdb_path": "outputs/vis_20260519_114243/vis_098600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "98800",
+            "score": "0.6703",
+            "pdb_path": "outputs/vis_20260519_114243/vis_098800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "99000",
+            "score": "0.4721",
+            "pdb_path": "outputs/vis_20260519_114243/vis_099000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "99200",
+            "score": "0.6268",
+            "pdb_path": "outputs/vis_20260519_114243/vis_099200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "99400",
+            "score": "0.6448",
+            "pdb_path": "outputs/vis_20260519_114243/vis_099400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "99600",
+            "score": "0.4825",
+            "pdb_path": "outputs/vis_20260519_114243/vis_099600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "99800",
+            "score": "0.5377",
+            "pdb_path": "outputs/vis_20260519_114243/vis_099800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "100000",
+            "score": "0.7025",
+            "pdb_path": "outputs/vis_20260519_114243/vis_100000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "100200",
+            "score": "0.5332",
+            "pdb_path": "outputs/vis_20260519_114243/vis_100200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "100400",
+            "score": "0.6206",
+            "pdb_path": "outputs/vis_20260519_114243/vis_100400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "100600",
+            "score": "0.9058",
+            "pdb_path": "outputs/vis_20260519_114243/vis_100600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "100800",
+            "score": "0.5335",
+            "pdb_path": "outputs/vis_20260519_114243/vis_100800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "101000",
+            "score": "1.0167",
+            "pdb_path": "outputs/vis_20260519_114243/vis_101000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "101200",
+            "score": "0.5021",
+            "pdb_path": "outputs/vis_20260519_114243/vis_101200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "101400",
+            "score": "0.4617",
+            "pdb_path": "outputs/vis_20260519_114243/vis_101400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "101600",
+            "score": "0.5027",
+            "pdb_path": "outputs/vis_20260519_114243/vis_101600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "101800",
+            "score": "0.7069",
+            "pdb_path": "outputs/vis_20260519_114243/vis_101800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "102000",
+            "score": "2.8679",
+            "pdb_path": "outputs/vis_20260519_114243/vis_102000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "102200",
+            "score": "0.5868",
+            "pdb_path": "outputs/vis_20260519_114243/vis_102200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "102400",
+            "score": "0.5875",
+            "pdb_path": "outputs/vis_20260519_114243/vis_102400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "102600",
+            "score": "0.6387",
+            "pdb_path": "outputs/vis_20260519_114243/vis_102600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "102800",
+            "score": "0.5269",
+            "pdb_path": "outputs/vis_20260519_114243/vis_102800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "103000",
+            "score": "0.5444",
+            "pdb_path": "outputs/vis_20260519_114243/vis_103000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "103200",
+            "score": "0.4817",
+            "pdb_path": "outputs/vis_20260519_114243/vis_103200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "103400",
+            "score": "0.4507",
+            "pdb_path": "outputs/vis_20260519_114243/vis_103400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "103600",
+            "score": "0.5703",
+            "pdb_path": "outputs/vis_20260519_114243/vis_103600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "103800",
+            "score": "0.701",
+            "pdb_path": "outputs/vis_20260519_114243/vis_103800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "104000",
+            "score": "1.0893",
+            "pdb_path": "outputs/vis_20260519_114243/vis_104000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "104200",
+            "score": "0.6106",
+            "pdb_path": "outputs/vis_20260519_114243/vis_104200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "104400",
+            "score": "0.6519",
+            "pdb_path": "outputs/vis_20260519_114243/vis_104400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "104600",
+            "score": "0.8411",
+            "pdb_path": "outputs/vis_20260519_114243/vis_104600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "104800",
+            "score": "0.5202",
+            "pdb_path": "outputs/vis_20260519_114243/vis_104800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "105000",
+            "score": "0.8464",
+            "pdb_path": "outputs/vis_20260519_114243/vis_105000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "105200",
+            "score": "0.5191",
+            "pdb_path": "outputs/vis_20260519_114243/vis_105200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "105400",
+            "score": "0.7194",
+            "pdb_path": "outputs/vis_20260519_114243/vis_105400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "105600",
+            "score": "1.0951",
+            "pdb_path": "outputs/vis_20260519_114243/vis_105600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "105800",
+            "score": "0.6858",
+            "pdb_path": "outputs/vis_20260519_114243/vis_105800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "106000",
+            "score": "0.4969",
+            "pdb_path": "outputs/vis_20260519_114243/vis_106000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "106200",
+            "score": "0.6913",
+            "pdb_path": "outputs/vis_20260519_114243/vis_106200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "106400",
+            "score": "1.2982",
+            "pdb_path": "outputs/vis_20260519_114243/vis_106400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "106600",
+            "score": "0.6694",
+            "pdb_path": "outputs/vis_20260519_114243/vis_106600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "106800",
+            "score": "0.5698",
+            "pdb_path": "outputs/vis_20260519_114243/vis_106800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "107000",
+            "score": "0.5359",
+            "pdb_path": "outputs/vis_20260519_114243/vis_107000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "107200",
+            "score": "0.7845",
+            "pdb_path": "outputs/vis_20260519_114243/vis_107200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "107400",
+            "score": "0.6227",
+            "pdb_path": "outputs/vis_20260519_114243/vis_107400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "107600",
+            "score": "0.9283",
+            "pdb_path": "outputs/vis_20260519_114243/vis_107600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "107800",
+            "score": "0.6559",
+            "pdb_path": "outputs/vis_20260519_114243/vis_107800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "108000",
+            "score": "0.5865",
+            "pdb_path": "outputs/vis_20260519_114243/vis_108000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "108200",
+            "score": "0.5682",
+            "pdb_path": "outputs/vis_20260519_114243/vis_108200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "108400",
+            "score": "1.187",
+            "pdb_path": "outputs/vis_20260519_114243/vis_108400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "108600",
+            "score": "0.7153",
+            "pdb_path": "outputs/vis_20260519_114243/vis_108600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "108800",
+            "score": "0.5474",
+            "pdb_path": "outputs/vis_20260519_114243/vis_108800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "109000",
+            "score": "0.7414",
+            "pdb_path": "outputs/vis_20260519_114243/vis_109000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "109200",
+            "score": "0.4917",
+            "pdb_path": "outputs/vis_20260519_114243/vis_109200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "109400",
+            "score": "0.5719",
+            "pdb_path": "outputs/vis_20260519_114243/vis_109400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "109600",
+            "score": "0.6964",
+            "pdb_path": "outputs/vis_20260519_114243/vis_109600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "109800",
+            "score": "0.6365",
+            "pdb_path": "outputs/vis_20260519_114243/vis_109800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "110000",
+            "score": "0.5444",
+            "pdb_path": "outputs/vis_20260519_114243/vis_110000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "110200",
+            "score": "0.6195",
+            "pdb_path": "outputs/vis_20260519_114243/vis_110200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "110400",
+            "score": "0.6065",
+            "pdb_path": "outputs/vis_20260519_114243/vis_110400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "110600",
+            "score": "0.5612",
+            "pdb_path": "outputs/vis_20260519_114243/vis_110600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "110800",
+            "score": "0.8643",
+            "pdb_path": "outputs/vis_20260519_114243/vis_110800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "111000",
+            "score": "0.5768",
+            "pdb_path": "outputs/vis_20260519_114243/vis_111000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "111200",
+            "score": "0.5146",
+            "pdb_path": "outputs/vis_20260519_114243/vis_111200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "111400",
+            "score": "0.9883",
+            "pdb_path": "outputs/vis_20260519_114243/vis_111400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "111600",
+            "score": "0.5847",
+            "pdb_path": "outputs/vis_20260519_114243/vis_111600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "111800",
+            "score": "0.7952",
+            "pdb_path": "outputs/vis_20260519_114243/vis_111800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "112000",
+            "score": "0.6239",
+            "pdb_path": "outputs/vis_20260519_114243/vis_112000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "112200",
+            "score": "0.5391",
+            "pdb_path": "outputs/vis_20260519_114243/vis_112200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "112400",
+            "score": "0.2834",
+            "pdb_path": "outputs/vis_20260519_114243/vis_112400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "112600",
+            "score": "0.6524",
+            "pdb_path": "outputs/vis_20260519_114243/vis_112600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "112800",
+            "score": "0.6094",
+            "pdb_path": "outputs/vis_20260519_114243/vis_112800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "113000",
+            "score": "0.6235",
+            "pdb_path": "outputs/vis_20260519_114243/vis_113000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "113200",
+            "score": "0.4522",
+            "pdb_path": "outputs/vis_20260519_114243/vis_113200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "113400",
+            "score": "0.6685",
+            "pdb_path": "outputs/vis_20260519_114243/vis_113400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "113600",
+            "score": "0.607",
+            "pdb_path": "outputs/vis_20260519_114243/vis_113600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "113800",
+            "score": "0.5664",
+            "pdb_path": "outputs/vis_20260519_114243/vis_113800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "114000",
+            "score": "0.9316",
+            "pdb_path": "outputs/vis_20260519_114243/vis_114000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "114200",
+            "score": "0.6219",
+            "pdb_path": "outputs/vis_20260519_114243/vis_114200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "114400",
+            "score": "0.7846",
+            "pdb_path": "outputs/vis_20260519_114243/vis_114400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "114600",
+            "score": "0.5706",
+            "pdb_path": "outputs/vis_20260519_114243/vis_114600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "114800",
+            "score": "0.5223",
+            "pdb_path": "outputs/vis_20260519_114243/vis_114800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "115000",
+            "score": "0.6576",
+            "pdb_path": "outputs/vis_20260519_114243/vis_115000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "115200",
+            "score": "0.5625",
+            "pdb_path": "outputs/vis_20260519_114243/vis_115200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "115400",
+            "score": "0.8316",
+            "pdb_path": "outputs/vis_20260519_114243/vis_115400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "115600",
+            "score": "0.6031",
+            "pdb_path": "outputs/vis_20260519_114243/vis_115600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "115800",
+            "score": "0.633",
+            "pdb_path": "outputs/vis_20260519_114243/vis_115800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "116000",
+            "score": "0.4527",
+            "pdb_path": "outputs/vis_20260519_114243/vis_116000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "116200",
+            "score": "0.5256",
+            "pdb_path": "outputs/vis_20260519_114243/vis_116200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "116400",
+            "score": "0.506",
+            "pdb_path": "outputs/vis_20260519_114243/vis_116400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "116600",
+            "score": "0.4699",
+            "pdb_path": "outputs/vis_20260519_114243/vis_116600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "116800",
+            "score": "0.7243",
+            "pdb_path": "outputs/vis_20260519_114243/vis_116800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "117000",
+            "score": "0.5445",
+            "pdb_path": "outputs/vis_20260519_114243/vis_117000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "117200",
+            "score": "0.6281",
+            "pdb_path": "outputs/vis_20260519_114243/vis_117200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "117400",
+            "score": "0.7843",
+            "pdb_path": "outputs/vis_20260519_114243/vis_117400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "117600",
+            "score": "0.5333",
+            "pdb_path": "outputs/vis_20260519_114243/vis_117600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "117800",
+            "score": "0.6509",
+            "pdb_path": "outputs/vis_20260519_114243/vis_117800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "118000",
+            "score": "0.5276",
+            "pdb_path": "outputs/vis_20260519_114243/vis_118000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "118200",
+            "score": "0.702",
+            "pdb_path": "outputs/vis_20260519_114243/vis_118200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "118400",
+            "score": "0.5092",
+            "pdb_path": "outputs/vis_20260519_114243/vis_118400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "118600",
+            "score": "0.8992",
+            "pdb_path": "outputs/vis_20260519_114243/vis_118600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "118800",
+            "score": "0.5921",
+            "pdb_path": "outputs/vis_20260519_114243/vis_118800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "119000",
+            "score": "0.5104",
+            "pdb_path": "outputs/vis_20260519_114243/vis_119000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "119200",
+            "score": "0.4624",
+            "pdb_path": "outputs/vis_20260519_114243/vis_119200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "119400",
+            "score": "4.0455",
+            "pdb_path": "outputs/vis_20260519_114243/vis_119400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "119600",
+            "score": "0.6537",
+            "pdb_path": "outputs/vis_20260519_114243/vis_119600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "119800",
+            "score": "0.5158",
+            "pdb_path": "outputs/vis_20260519_114243/vis_119800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "120000",
+            "score": "1.7202",
+            "pdb_path": "outputs/vis_20260519_114243/vis_120000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "120200",
+            "score": "0.6716",
+            "pdb_path": "outputs/vis_20260519_114243/vis_120200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "120400",
+            "score": "0.483",
+            "pdb_path": "outputs/vis_20260519_114243/vis_120400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "120600",
+            "score": "0.4792",
+            "pdb_path": "outputs/vis_20260519_114243/vis_120600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "120800",
+            "score": "0.7285",
+            "pdb_path": "outputs/vis_20260519_114243/vis_120800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "121000",
+            "score": "0.9942",
+            "pdb_path": "outputs/vis_20260519_114243/vis_121000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "121200",
+            "score": "0.4418",
+            "pdb_path": "outputs/vis_20260519_114243/vis_121200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "121400",
+            "score": "0.5939",
+            "pdb_path": "outputs/vis_20260519_114243/vis_121400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "121600",
+            "score": "0.4775",
+            "pdb_path": "outputs/vis_20260519_114243/vis_121600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "121800",
+            "score": "0.6055",
+            "pdb_path": "outputs/vis_20260519_114243/vis_121800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "122000",
+            "score": "0.744",
+            "pdb_path": "outputs/vis_20260519_114243/vis_122000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "122200",
+            "score": "0.5054",
+            "pdb_path": "outputs/vis_20260519_114243/vis_122200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "122400",
+            "score": "0.7153",
+            "pdb_path": "outputs/vis_20260519_114243/vis_122400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "122600",
+            "score": "0.5422",
+            "pdb_path": "outputs/vis_20260519_114243/vis_122600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "122800",
+            "score": "0.5636",
+            "pdb_path": "outputs/vis_20260519_114243/vis_122800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "123000",
+            "score": "0.7458",
+            "pdb_path": "outputs/vis_20260519_114243/vis_123000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "123200",
+            "score": "0.5226",
+            "pdb_path": "outputs/vis_20260519_114243/vis_123200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "123400",
+            "score": "0.6784",
+            "pdb_path": "outputs/vis_20260519_114243/vis_123400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "123600",
+            "score": "0.5093",
+            "pdb_path": "outputs/vis_20260519_114243/vis_123600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "123800",
+            "score": "0.7913",
+            "pdb_path": "outputs/vis_20260519_114243/vis_123800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "124000",
+            "score": "0.6438",
+            "pdb_path": "outputs/vis_20260519_114243/vis_124000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "124200",
+            "score": "0.5283",
+            "pdb_path": "outputs/vis_20260519_114243/vis_124200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "124400",
+            "score": "0.4876",
+            "pdb_path": "outputs/vis_20260519_114243/vis_124400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "124600",
+            "score": "0.6491",
+            "pdb_path": "outputs/vis_20260519_114243/vis_124600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "124800",
+            "score": "0.7716",
+            "pdb_path": "outputs/vis_20260519_114243/vis_124800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "125000",
+            "score": "0.6159",
+            "pdb_path": "outputs/vis_20260519_114243/vis_125000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "125200",
+            "score": "0.5366",
+            "pdb_path": "outputs/vis_20260519_114243/vis_125200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "125400",
+            "score": "0.7448",
+            "pdb_path": "outputs/vis_20260519_114243/vis_125400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "125600",
+            "score": "0.7189",
+            "pdb_path": "outputs/vis_20260519_114243/vis_125600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "125800",
+            "score": "1.4331",
+            "pdb_path": "outputs/vis_20260519_114243/vis_125800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "126000",
+            "score": "0.6108",
+            "pdb_path": "outputs/vis_20260519_114243/vis_126000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "126200",
+            "score": "0.806",
+            "pdb_path": "outputs/vis_20260519_114243/vis_126200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "126400",
+            "score": "0.6989",
+            "pdb_path": "outputs/vis_20260519_114243/vis_126400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "126600",
+            "score": "0.5477",
+            "pdb_path": "outputs/vis_20260519_114243/vis_126600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "126800",
+            "score": "0.5274",
+            "pdb_path": "outputs/vis_20260519_114243/vis_126800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "127000",
+            "score": "0.9363",
+            "pdb_path": "outputs/vis_20260519_114243/vis_127000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "127200",
+            "score": "0.5676",
+            "pdb_path": "outputs/vis_20260519_114243/vis_127200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "127400",
+            "score": "0.6144",
+            "pdb_path": "outputs/vis_20260519_114243/vis_127400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "127600",
+            "score": "0.6159",
+            "pdb_path": "outputs/vis_20260519_114243/vis_127600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "127800",
+            "score": "0.5534",
+            "pdb_path": "outputs/vis_20260519_114243/vis_127800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "128000",
+            "score": "1.5636",
+            "pdb_path": "outputs/vis_20260519_114243/vis_128000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "128200",
+            "score": "0.6004",
+            "pdb_path": "outputs/vis_20260519_114243/vis_128200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "128400",
+            "score": "0.5162",
+            "pdb_path": "outputs/vis_20260519_114243/vis_128400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "128600",
+            "score": "0.5446",
+            "pdb_path": "outputs/vis_20260519_114243/vis_128600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "128800",
+            "score": "0.4356",
+            "pdb_path": "outputs/vis_20260519_114243/vis_128800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "129000",
+            "score": "0.5608",
+            "pdb_path": "outputs/vis_20260519_114243/vis_129000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "129200",
+            "score": "0.4647",
+            "pdb_path": "outputs/vis_20260519_114243/vis_129200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "129400",
+            "score": "0.7782",
+            "pdb_path": "outputs/vis_20260519_114243/vis_129400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "129600",
+            "score": "0.5365",
+            "pdb_path": "outputs/vis_20260519_114243/vis_129600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "129800",
+            "score": "0.8939",
+            "pdb_path": "outputs/vis_20260519_114243/vis_129800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "130000",
+            "score": "0.5105",
+            "pdb_path": "outputs/vis_20260519_114243/vis_130000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "130200",
+            "score": "0.5473",
+            "pdb_path": "outputs/vis_20260519_114243/vis_130200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "130400",
+            "score": "0.5771",
+            "pdb_path": "outputs/vis_20260519_114243/vis_130400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "130600",
+            "score": "0.3674",
+            "pdb_path": "outputs/vis_20260519_114243/vis_130600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "130800",
+            "score": "0.6405",
+            "pdb_path": "outputs/vis_20260519_114243/vis_130800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "131000",
+            "score": "0.3646",
+            "pdb_path": "outputs/vis_20260519_114243/vis_131000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "131200",
+            "score": "0.5608",
+            "pdb_path": "outputs/vis_20260519_114243/vis_131200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "131400",
+            "score": "0.4842",
+            "pdb_path": "outputs/vis_20260519_114243/vis_131400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "131600",
+            "score": "0.671",
+            "pdb_path": "outputs/vis_20260519_114243/vis_131600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "131800",
+            "score": "0.5376",
+            "pdb_path": "outputs/vis_20260519_114243/vis_131800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "132000",
+            "score": "0.3016",
+            "pdb_path": "outputs/vis_20260519_114243/vis_132000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "132200",
+            "score": "0.3129",
+            "pdb_path": "outputs/vis_20260519_114243/vis_132200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "132400",
+            "score": "0.7109",
+            "pdb_path": "outputs/vis_20260519_114243/vis_132400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "132600",
+            "score": "0.598",
+            "pdb_path": "outputs/vis_20260519_114243/vis_132600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "132800",
+            "score": "0.4149",
+            "pdb_path": "outputs/vis_20260519_114243/vis_132800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "133000",
+            "score": "0.4933",
+            "pdb_path": "outputs/vis_20260519_114243/vis_133000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "133200",
+            "score": "0.526",
+            "pdb_path": "outputs/vis_20260519_114243/vis_133200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "133400",
+            "score": "1.0242",
+            "pdb_path": "outputs/vis_20260519_114243/vis_133400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "133600",
+            "score": "0.5889",
+            "pdb_path": "outputs/vis_20260519_114243/vis_133600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "133800",
+            "score": "0.5079",
+            "pdb_path": "outputs/vis_20260519_114243/vis_133800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "134000",
+            "score": "0.6269",
+            "pdb_path": "outputs/vis_20260519_114243/vis_134000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "134200",
+            "score": "0.497",
+            "pdb_path": "outputs/vis_20260519_114243/vis_134200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "134400",
+            "score": "0.8681",
+            "pdb_path": "outputs/vis_20260519_114243/vis_134400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "134600",
+            "score": "0.696",
+            "pdb_path": "outputs/vis_20260519_114243/vis_134600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "134800",
+            "score": "0.6164",
+            "pdb_path": "outputs/vis_20260519_114243/vis_134800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "135000",
+            "score": "0.5711",
+            "pdb_path": "outputs/vis_20260519_114243/vis_135000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "135200",
+            "score": "0.6723",
+            "pdb_path": "outputs/vis_20260519_114243/vis_135200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "135400",
+            "score": "0.6655",
+            "pdb_path": "outputs/vis_20260519_114243/vis_135400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "135600",
+            "score": "0.5743",
+            "pdb_path": "outputs/vis_20260519_114243/vis_135600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "135800",
+            "score": "0.7454",
+            "pdb_path": "outputs/vis_20260519_114243/vis_135800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "136000",
+            "score": "0.5347",
+            "pdb_path": "outputs/vis_20260519_114243/vis_136000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "136200",
+            "score": "0.4692",
+            "pdb_path": "outputs/vis_20260519_114243/vis_136200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "136400",
+            "score": "0.6463",
+            "pdb_path": "outputs/vis_20260519_114243/vis_136400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "136600",
+            "score": "0.55",
+            "pdb_path": "outputs/vis_20260519_114243/vis_136600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "136800",
+            "score": "2.6158",
+            "pdb_path": "outputs/vis_20260519_114243/vis_136800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "137000",
+            "score": "0.5859",
+            "pdb_path": "outputs/vis_20260519_114243/vis_137000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "137200",
+            "score": "0.5423",
+            "pdb_path": "outputs/vis_20260519_114243/vis_137200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "137400",
+            "score": "1.2021",
+            "pdb_path": "outputs/vis_20260519_114243/vis_137400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "137600",
+            "score": "0.4929",
+            "pdb_path": "outputs/vis_20260519_114243/vis_137600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "137800",
+            "score": "0.6941",
+            "pdb_path": "outputs/vis_20260519_114243/vis_137800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "138000",
+            "score": "0.9366",
+            "pdb_path": "outputs/vis_20260519_114243/vis_138000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "138200",
+            "score": "0.6593",
+            "pdb_path": "outputs/vis_20260519_114243/vis_138200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "138400",
+            "score": "0.5666",
+            "pdb_path": "outputs/vis_20260519_114243/vis_138400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "138600",
+            "score": "0.6694",
+            "pdb_path": "outputs/vis_20260519_114243/vis_138600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "138800",
+            "score": "0.5531",
+            "pdb_path": "outputs/vis_20260519_114243/vis_138800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "139000",
+            "score": "0.4996",
+            "pdb_path": "outputs/vis_20260519_114243/vis_139000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "139200",
+            "score": "0.3933",
+            "pdb_path": "outputs/vis_20260519_114243/vis_139200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "139400",
+            "score": "0.7369",
+            "pdb_path": "outputs/vis_20260519_114243/vis_139400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "139600",
+            "score": "0.5567",
+            "pdb_path": "outputs/vis_20260519_114243/vis_139600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "139800",
+            "score": "0.5944",
+            "pdb_path": "outputs/vis_20260519_114243/vis_139800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "140000",
+            "score": "0.5225",
+            "pdb_path": "outputs/vis_20260519_114243/vis_140000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "140200",
+            "score": "0.4566",
+            "pdb_path": "outputs/vis_20260519_114243/vis_140200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "140400",
+            "score": "1.0459",
+            "pdb_path": "outputs/vis_20260519_114243/vis_140400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "140600",
+            "score": "0.3881",
+            "pdb_path": "outputs/vis_20260519_114243/vis_140600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "140800",
+            "score": "0.452",
+            "pdb_path": "outputs/vis_20260519_114243/vis_140800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "141000",
+            "score": "0.4417",
+            "pdb_path": "outputs/vis_20260519_114243/vis_141000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "141200",
+            "score": "0.4786",
+            "pdb_path": "outputs/vis_20260519_114243/vis_141200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "141400",
+            "score": "0.445",
+            "pdb_path": "outputs/vis_20260519_114243/vis_141400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "141600",
+            "score": "0.5271",
+            "pdb_path": "outputs/vis_20260519_114243/vis_141600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "141800",
+            "score": "0.6031",
+            "pdb_path": "outputs/vis_20260519_114243/vis_141800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "142000",
+            "score": "0.5229",
+            "pdb_path": "outputs/vis_20260519_114243/vis_142000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "142200",
+            "score": "0.6204",
+            "pdb_path": "outputs/vis_20260519_114243/vis_142200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "142400",
+            "score": "0.5353",
+            "pdb_path": "outputs/vis_20260519_114243/vis_142400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "142600",
+            "score": "0.6267",
+            "pdb_path": "outputs/vis_20260519_114243/vis_142600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "142800",
+            "score": "0.7629",
+            "pdb_path": "outputs/vis_20260519_114243/vis_142800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "143000",
+            "score": "0.6451",
+            "pdb_path": "outputs/vis_20260519_114243/vis_143000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "143200",
+            "score": "1.6654",
+            "pdb_path": "outputs/vis_20260519_114243/vis_143200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "143400",
+            "score": "0.6142",
+            "pdb_path": "outputs/vis_20260519_114243/vis_143400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "143600",
+            "score": "0.5367",
+            "pdb_path": "outputs/vis_20260519_114243/vis_143600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "143800",
+            "score": "0.7041",
+            "pdb_path": "outputs/vis_20260519_114243/vis_143800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "144000",
+            "score": "0.5499",
+            "pdb_path": "outputs/vis_20260519_114243/vis_144000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "144200",
+            "score": "0.7263",
+            "pdb_path": "outputs/vis_20260519_114243/vis_144200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "144400",
+            "score": "0.3188",
+            "pdb_path": "outputs/vis_20260519_114243/vis_144400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "144600",
+            "score": "0.5823",
+            "pdb_path": "outputs/vis_20260519_114243/vis_144600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "144800",
+            "score": "0.7513",
+            "pdb_path": "outputs/vis_20260519_114243/vis_144800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "145000",
+            "score": "0.5737",
+            "pdb_path": "outputs/vis_20260519_114243/vis_145000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "145200",
+            "score": "0.5163",
+            "pdb_path": "outputs/vis_20260519_114243/vis_145200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "145400",
+            "score": "0.7952",
+            "pdb_path": "outputs/vis_20260519_114243/vis_145400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "145600",
+            "score": "0.5447",
+            "pdb_path": "outputs/vis_20260519_114243/vis_145600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "145800",
+            "score": "1.0905",
+            "pdb_path": "outputs/vis_20260519_114243/vis_145800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "146000",
+            "score": "0.5597",
+            "pdb_path": "outputs/vis_20260519_114243/vis_146000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "146200",
+            "score": "0.4912",
+            "pdb_path": "outputs/vis_20260519_114243/vis_146200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "146400",
+            "score": "0.4456",
+            "pdb_path": "outputs/vis_20260519_114243/vis_146400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "146600",
+            "score": "0.7498",
+            "pdb_path": "outputs/vis_20260519_114243/vis_146600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "146800",
+            "score": "0.5822",
+            "pdb_path": "outputs/vis_20260519_114243/vis_146800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "147000",
+            "score": "0.5293",
+            "pdb_path": "outputs/vis_20260519_114243/vis_147000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "147200",
+            "score": "0.6433",
+            "pdb_path": "outputs/vis_20260519_114243/vis_147200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "147400",
+            "score": "1.3099",
+            "pdb_path": "outputs/vis_20260519_114243/vis_147400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "147600",
+            "score": "0.5106",
+            "pdb_path": "outputs/vis_20260519_114243/vis_147600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "147800",
+            "score": "0.6075",
+            "pdb_path": "outputs/vis_20260519_114243/vis_147800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "148000",
+            "score": "0.5041",
+            "pdb_path": "outputs/vis_20260519_114243/vis_148000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "148200",
+            "score": "2.3263",
+            "pdb_path": "outputs/vis_20260519_114243/vis_148200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "148400",
+            "score": "0.5383",
+            "pdb_path": "outputs/vis_20260519_114243/vis_148400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "148600",
+            "score": "0.5946",
+            "pdb_path": "outputs/vis_20260519_114243/vis_148600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "148800",
+            "score": "0.5062",
+            "pdb_path": "outputs/vis_20260519_114243/vis_148800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "149000",
+            "score": "0.7395",
+            "pdb_path": "outputs/vis_20260519_114243/vis_149000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "149200",
+            "score": "0.5461",
+            "pdb_path": "outputs/vis_20260519_114243/vis_149200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "149400",
+            "score": "1.6772",
+            "pdb_path": "outputs/vis_20260519_114243/vis_149400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "149600",
+            "score": "0.6106",
+            "pdb_path": "outputs/vis_20260519_114243/vis_149600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "149800",
+            "score": "1.1343",
+            "pdb_path": "outputs/vis_20260519_114243/vis_149800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "150000",
+            "score": "0.6838",
+            "pdb_path": "outputs/vis_20260519_114243/vis_150000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "150200",
+            "score": "1.045",
+            "pdb_path": "outputs/vis_20260519_114243/vis_150200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "150400",
+            "score": "0.6043",
+            "pdb_path": "outputs/vis_20260519_114243/vis_150400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "150600",
+            "score": "0.4505",
+            "pdb_path": "outputs/vis_20260519_114243/vis_150600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "150800",
+            "score": "0.4668",
+            "pdb_path": "outputs/vis_20260519_114243/vis_150800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "151000",
+            "score": "0.6071",
+            "pdb_path": "outputs/vis_20260519_114243/vis_151000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "151200",
+            "score": "1.2599",
+            "pdb_path": "outputs/vis_20260519_114243/vis_151200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "151400",
+            "score": "0.5244",
+            "pdb_path": "outputs/vis_20260519_114243/vis_151400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "151600",
+            "score": "0.7684",
+            "pdb_path": "outputs/vis_20260519_114243/vis_151600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "151800",
+            "score": "0.5112",
+            "pdb_path": "outputs/vis_20260519_114243/vis_151800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "152000",
+            "score": "0.6716",
+            "pdb_path": "outputs/vis_20260519_114243/vis_152000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "152200",
+            "score": "0.5883",
+            "pdb_path": "outputs/vis_20260519_114243/vis_152200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "152400",
+            "score": "2.8234",
+            "pdb_path": "outputs/vis_20260519_114243/vis_152400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "152600",
+            "score": "0.7163",
+            "pdb_path": "outputs/vis_20260519_114243/vis_152600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "152800",
+            "score": "0.5718",
+            "pdb_path": "outputs/vis_20260519_114243/vis_152800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "153000",
+            "score": "2.2989",
+            "pdb_path": "outputs/vis_20260519_114243/vis_153000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "153200",
+            "score": "0.7331",
+            "pdb_path": "outputs/vis_20260519_114243/vis_153200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "153400",
+            "score": "0.5732",
+            "pdb_path": "outputs/vis_20260519_114243/vis_153400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "153600",
+            "score": "0.5369",
+            "pdb_path": "outputs/vis_20260519_114243/vis_153600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "153800",
+            "score": "0.6149",
+            "pdb_path": "outputs/vis_20260519_114243/vis_153800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "154000",
+            "score": "0.6202",
+            "pdb_path": "outputs/vis_20260519_114243/vis_154000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "154200",
+            "score": "0.7992",
+            "pdb_path": "outputs/vis_20260519_114243/vis_154200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "154400",
+            "score": "0.5041",
+            "pdb_path": "outputs/vis_20260519_114243/vis_154400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "154600",
+            "score": "0.7686",
+            "pdb_path": "outputs/vis_20260519_114243/vis_154600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "154800",
+            "score": "0.52",
+            "pdb_path": "outputs/vis_20260519_114243/vis_154800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "155000",
+            "score": "2.2202",
+            "pdb_path": "outputs/vis_20260519_114243/vis_155000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "155200",
+            "score": "0.7715",
+            "pdb_path": "outputs/vis_20260519_114243/vis_155200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "155400",
+            "score": "0.5562",
+            "pdb_path": "outputs/vis_20260519_114243/vis_155400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "155600",
+            "score": "0.6516",
+            "pdb_path": "outputs/vis_20260519_114243/vis_155600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "155800",
+            "score": "0.6185",
+            "pdb_path": "outputs/vis_20260519_114243/vis_155800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "156000",
+            "score": "0.6198",
+            "pdb_path": "outputs/vis_20260519_114243/vis_156000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "156200",
+            "score": "0.5773",
+            "pdb_path": "outputs/vis_20260519_114243/vis_156200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "156400",
+            "score": "2.5366",
+            "pdb_path": "outputs/vis_20260519_114243/vis_156400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "156600",
+            "score": "0.7145",
+            "pdb_path": "outputs/vis_20260519_114243/vis_156600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "156800",
+            "score": "0.5532",
+            "pdb_path": "outputs/vis_20260519_114243/vis_156800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "157000",
+            "score": "0.4532",
+            "pdb_path": "outputs/vis_20260519_114243/vis_157000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "157200",
+            "score": "0.541",
+            "pdb_path": "outputs/vis_20260519_114243/vis_157200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "157400",
+            "score": "0.472",
+            "pdb_path": "outputs/vis_20260519_114243/vis_157400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "157600",
+            "score": "0.509",
+            "pdb_path": "outputs/vis_20260519_114243/vis_157600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "157800",
+            "score": "0.5931",
+            "pdb_path": "outputs/vis_20260519_114243/vis_157800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "158000",
+            "score": "0.4932",
+            "pdb_path": "outputs/vis_20260519_114243/vis_158000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "158200",
+            "score": "0.6683",
+            "pdb_path": "outputs/vis_20260519_114243/vis_158200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "158400",
+            "score": "0.5817",
+            "pdb_path": "outputs/vis_20260519_114243/vis_158400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "158600",
+            "score": "0.7",
+            "pdb_path": "outputs/vis_20260519_114243/vis_158600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "158800",
+            "score": "0.504",
+            "pdb_path": "outputs/vis_20260519_114243/vis_158800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "159000",
+            "score": "0.6611",
+            "pdb_path": "outputs/vis_20260519_114243/vis_159000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "159200",
+            "score": "1.9565",
+            "pdb_path": "outputs/vis_20260519_114243/vis_159200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "159400",
+            "score": "0.687",
+            "pdb_path": "outputs/vis_20260519_114243/vis_159400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "159600",
+            "score": "0.4606",
+            "pdb_path": "outputs/vis_20260519_114243/vis_159600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "159800",
+            "score": "0.4701",
+            "pdb_path": "outputs/vis_20260519_114243/vis_159800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "160000",
+            "score": "0.6025",
+            "pdb_path": "outputs/vis_20260519_114243/vis_160000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "160200",
+            "score": "0.5344",
+            "pdb_path": "outputs/vis_20260519_114243/vis_160200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "160400",
+            "score": "0.407",
+            "pdb_path": "outputs/vis_20260519_114243/vis_160400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "160600",
+            "score": "0.4483",
+            "pdb_path": "outputs/vis_20260519_114243/vis_160600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "160800",
+            "score": "0.5271",
+            "pdb_path": "outputs/vis_20260519_114243/vis_160800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "161000",
+            "score": "0.5646",
+            "pdb_path": "outputs/vis_20260519_114243/vis_161000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "161200",
+            "score": "0.9227",
+            "pdb_path": "outputs/vis_20260519_114243/vis_161200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "161400",
+            "score": "0.5303",
+            "pdb_path": "outputs/vis_20260519_114243/vis_161400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "161600",
+            "score": "0.5604",
+            "pdb_path": "outputs/vis_20260519_114243/vis_161600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "161800",
+            "score": "0.6383",
+            "pdb_path": "outputs/vis_20260519_114243/vis_161800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "162000",
+            "score": "0.5988",
+            "pdb_path": "outputs/vis_20260519_114243/vis_162000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "162200",
+            "score": "0.4826",
+            "pdb_path": "outputs/vis_20260519_114243/vis_162200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "162400",
+            "score": "0.6721",
+            "pdb_path": "outputs/vis_20260519_114243/vis_162400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "162600",
+            "score": "0.517",
+            "pdb_path": "outputs/vis_20260519_114243/vis_162600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "162800",
+            "score": "0.4192",
+            "pdb_path": "outputs/vis_20260519_114243/vis_162800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "163000",
+            "score": "0.6177",
+            "pdb_path": "outputs/vis_20260519_114243/vis_163000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "163200",
+            "score": "1.9305",
+            "pdb_path": "outputs/vis_20260519_114243/vis_163200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "163400",
+            "score": "0.5021",
+            "pdb_path": "outputs/vis_20260519_114243/vis_163400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "163600",
+            "score": "0.777",
+            "pdb_path": "outputs/vis_20260519_114243/vis_163600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "163800",
+            "score": "0.3817",
+            "pdb_path": "outputs/vis_20260519_114243/vis_163800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "164000",
+            "score": "0.5794",
+            "pdb_path": "outputs/vis_20260519_114243/vis_164000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "164200",
+            "score": "0.6119",
+            "pdb_path": "outputs/vis_20260519_114243/vis_164200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "164400",
+            "score": "0.4624",
+            "pdb_path": "outputs/vis_20260519_114243/vis_164400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "164600",
+            "score": "1.3528",
+            "pdb_path": "outputs/vis_20260519_114243/vis_164600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "164800",
+            "score": "0.6009",
+            "pdb_path": "outputs/vis_20260519_114243/vis_164800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "165000",
+            "score": "0.5297",
+            "pdb_path": "outputs/vis_20260519_114243/vis_165000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "165200",
+            "score": "0.6073",
+            "pdb_path": "outputs/vis_20260519_114243/vis_165200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "165400",
+            "score": "0.5736",
+            "pdb_path": "outputs/vis_20260519_114243/vis_165400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "165600",
+            "score": "0.7658",
+            "pdb_path": "outputs/vis_20260519_114243/vis_165600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "165800",
+            "score": "0.4604",
+            "pdb_path": "outputs/vis_20260519_114243/vis_165800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "166000",
+            "score": "0.5219",
+            "pdb_path": "outputs/vis_20260519_114243/vis_166000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "166200",
+            "score": "0.4589",
+            "pdb_path": "outputs/vis_20260519_114243/vis_166200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "166400",
+            "score": "0.7546",
+            "pdb_path": "outputs/vis_20260519_114243/vis_166400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "166600",
+            "score": "0.5562",
+            "pdb_path": "outputs/vis_20260519_114243/vis_166600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "166800",
+            "score": "0.6875",
+            "pdb_path": "outputs/vis_20260519_114243/vis_166800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "167000",
+            "score": "0.5709",
+            "pdb_path": "outputs/vis_20260519_114243/vis_167000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "167200",
+            "score": "0.9587",
+            "pdb_path": "outputs/vis_20260519_114243/vis_167200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "167400",
+            "score": "0.5218",
+            "pdb_path": "outputs/vis_20260519_114243/vis_167400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "167600",
+            "score": "0.6547",
+            "pdb_path": "outputs/vis_20260519_114243/vis_167600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "167800",
+            "score": "0.5833",
+            "pdb_path": "outputs/vis_20260519_114243/vis_167800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "168000",
+            "score": "0.5102",
+            "pdb_path": "outputs/vis_20260519_114243/vis_168000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "168200",
+            "score": "0.7583",
+            "pdb_path": "outputs/vis_20260519_114243/vis_168200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "168400",
+            "score": "0.4026",
+            "pdb_path": "outputs/vis_20260519_114243/vis_168400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "168600",
+            "score": "0.4703",
+            "pdb_path": "outputs/vis_20260519_114243/vis_168600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "168800",
+            "score": "0.528",
+            "pdb_path": "outputs/vis_20260519_114243/vis_168800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "169000",
+            "score": "1.5743",
+            "pdb_path": "outputs/vis_20260519_114243/vis_169000_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "169200",
+            "score": "0.5901",
+            "pdb_path": "outputs/vis_20260519_114243/vis_169200_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "169400",
+            "score": "0.5158",
+            "pdb_path": "outputs/vis_20260519_114243/vis_169400_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "169600",
+            "score": "0.7442",
+            "pdb_path": "outputs/vis_20260519_114243/vis_169600_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "169800",
+            "score": "0.5011",
+            "pdb_path": "outputs/vis_20260519_114243/vis_169800_full_atom.pdb"
+        },
+        {
+            "phase": "phase",
+            "epoch": "170000",
+            "score": "0.6185",
+            "pdb_path": "outputs/vis_20260519_114243/vis_170000_full_atom.pdb"
+        }
+    ]
+}
+
