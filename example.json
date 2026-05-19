@@ -1,16 +1,32 @@
 {
-    "sequence":"",
-    "length":"",
-    "name":"",
-    "organism":"",
-    "date":"",
-    "vers":"",
-    "file":"",
-    "metrics":"",
+    "sequence": "",
+    "name": "",
+    "organism": "",
+    "date": "",
+    "vers": "",
+    "file": "",
+    "metrics": {
+        "methods": "",
+        "score_function": "",
+        "length": "",
+        "bead_atom": "",
+        "time": "",
+        "gpu_time": "",
+        "final_score": "",
+        "best_score_step": "",
+        "molecule": "",
+        "local_filepath": "",
+        "potential": "",
+        "bond": ""
+    },
+    "RMSD": "",
     "interframes": [
         {
-            "index": "",
-            "file": ""
+            "phase": "",
+            "epoch": "",
+            "score": "",
+            "video_path": "",
+            "pdb_path": ""
         }
     ]
 }
