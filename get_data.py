@@ -62,7 +62,7 @@ def read_metric(path):
     return data
 
 def parse_vis(vis):
-    frames = {}
+    frames = []
     for i in range(len(vis)):
         parts = vis[i].split()
         # parts = phase,epoch,score,path_fichier_png,path_fichier_pdb

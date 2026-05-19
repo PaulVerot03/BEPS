@@ -10,6 +10,7 @@
         "score_function": "",
         "length": "",
         "bead_atom": "",
+        "chain": "",
         "time": "",
         "gpu_time": "",
         "final_score": "",
