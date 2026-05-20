@@ -126,10 +126,11 @@ def main():
     # client = MongoClient(host="localhost", port=27017)
     # collection = client["rna_optimizer"]["structures"]
 
-    origin_path = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/"
-    
+    #origin_path = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/"
+    origin_path = "/home/anais/Optimize_3D_ARNStructure/"
+    source_file = "/home/anais/Optimize_3D_ARNStructure/metrics2.csv"
     # Method,Score_Function,Sequence_Length,Bead_Atom,Wall_Time_s,GPU_Time_s,Final_Score,Best_Score_Step,Molecule,Out_Name,Potential,Bond,Vis_Dir
-    source_file = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/metrics.csv"
+    #source_file = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/metrics.csv"
     source = pd.read_csv(source_file, skipinitialspace=True)
     
     all_documents = []
