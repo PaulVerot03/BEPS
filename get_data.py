@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import os
+
 '''
 This .py file will be called by the main task, it will be given a path to the specific vis_  dir.
 In this dir are found :
@@ -9,6 +10,7 @@ In this dir are found :
 From those we can get all needed infos. 
 Those infos will be inserted into a mongoDB database.
 '''
+
 
 def read_folding_vis(path):
     csv_path = path + '/folding_vis.csv'
@@ -23,9 +25,7 @@ def read_metric(path):
     return df
 
 def parse_vis(vis_df):
-    avg = 0.0
     frames = []
-    ctr = 1
     for _, row in vis_df.iterrows():
         interframe = {
             "phase": str(row.iloc[0]),
@@ -34,10 +34,7 @@ def parse_vis(vis_df):
             "pdb_path": str(row.iloc[3])
         }
         frames.append(interframe)
-        avg += float(row.iloc[2])
-        ctr +=1
-    avg = avg / ctr
-    return frames #, avg
+    return frames 
 def get_std_mean(vis_df):
     mean = vis_df["score"].mean()
     std = vis_df["score"].std()
@@ -72,6 +69,7 @@ def parse_metrics(metrics_df):
     }
     
     return document, top_level_info
+
 
 
 def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std):
@@ -121,9 +119,6 @@ def main():
         json.dump(all_documents, f, indent=4)
     
     print(f"Successfully wrote {len(all_documents)} documents to {output_file}")
-
-
-
 
 if __name__ == '__main__':
     main()
