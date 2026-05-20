@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import os
 
+from pymongo import MongoClient 
 '''
 This .py file will be called by the main task, it will be given a path to the specific vis_  dir.
 In this dir are found :
@@ -70,17 +71,38 @@ def parse_metrics(metrics_df):
     
     return document, top_level_info
 
+#date
+
+def get_date(path):
+    filename = os.path.basename(path)
+    parts= filename.split("_")
+    for part in parts:
+        if len(part)==8 and part.isdigit():
+            return f"{part[:4]}-{part[4:6]}-{part[6:]}"
+    return ""
 
 
-def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std):
-    last_pdb = frames[-1]["pdb_path"] if frames else ""
+#versionning
+def get_version(sequence,collection):
+    documents= list(collection.find({"sequence":sequence}))
+    if len(documents) == 0:
+        return "1.0"
+    else:
+        versions= [float(doc["vers"]) for doc in documents if doc.get("vers")]
+        derniere_version = max(versions)
+        nouvelle_version = round (derniere_version + 0.1, 1)
+        return str(nouvelle_version)
     
+    
+def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std, collection):
+    
+    last_pdb = frames[-1]["pdb_path"] if frames else ""
     document = {
         "sequence": top_level_info.get("sequence", ""),
         "name": top_level_info.get("name", ""),
         "organism": top_level_info.get("organism", ""),
-        "date": "",
-        "vers": "",
+        "date": get_date(metrics.get("local_filepath", "")),
+        "vers": get_version(top_level_info.get("sequence", ""), collection),
         "file": last_pdb,
         "metrics": metrics,
         "RMSD_avg":avg,
@@ -90,8 +112,11 @@ def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std):
     return document
 
 
-
 def main():
+    
+    client = MongoClient(host="localhost", port=27017)
+    collection = client["rna_optimizer"]["structures"]
+
     origin_path = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/"
     
     # Method,Score_Function,Sequence_Length,Bead_Atom,Wall_Time_s,GPU_Time_s,Final_Score,Best_Score_Step,Molecule,Out_Name,Potential,Bond,Vis_Dir
@@ -110,7 +135,7 @@ def main():
         std,mean = get_std_mean(vis_df)
         metrics_dict, top_level_info = parse_metrics(metrics_df)
         
-        final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std)
+        final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection)
         all_documents.append(final_document)
         #print(f"{json.dumps(final_document, indent=4)}")
 
@@ -118,6 +143,11 @@ def main():
     with open(output_file, 'w') as f:
         json.dump(all_documents, f, indent=4)
     
+    collection.insert_many(all_documents)   
+    client.close()
+
+    print(f"{len(all_documents)} documents inseres dans Mongodb")
+
     print(f"Successfully wrote {len(all_documents)} documents to {output_file}")
 
 if __name__ == '__main__':
