@@ -1,8 +1,12 @@
 import pandas as pd
 import json
 import os
-
+# pyrefly: ignore [missing-import]
+from dotenv import load_dotenv
+# pyrefly: ignore [missing-import]
 from pymongo import MongoClient 
+from pymongo import AsyncMongoClient
+
 '''
 This .py file will be called by the main task, it will be given a path to the specific vis_  dir.
 In this dir are found :
@@ -89,6 +93,8 @@ def get_version(sequence,collection):
         return "1.0"
     else:
         versions= [float(doc["vers"]) for doc in documents if doc.get("vers")]
+        if not versions:
+            return "1.0"
         derniere_version = max(versions)
         nouvelle_version = round (derniere_version + 0.1, 1)
         return str(nouvelle_version)
@@ -113,9 +119,12 @@ def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std, collection)
 
 
 def main():
-    
-    client = MongoClient(host="localhost", port=27017)
-    collection = client["rna_optimizer"]["structures"]
+    load_dotenv()
+    MONGO_URI = os.getenv("API_USER")
+    client = MongoClient(MONGO_URI, tls=True)
+    collection = client["anais"]["sequence"]
+    # client = MongoClient(host="localhost", port=27017)
+    # collection = client["rna_optimizer"]["structures"]
 
     origin_path = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/"
     
