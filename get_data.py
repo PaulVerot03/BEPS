@@ -64,7 +64,6 @@ def parse_metrics(metrics_df):
         "bond": str(row.get('Bond', ''))
     }
     
-    # TODO : query la base pour connaitre la version de l'enregistrement et la metre a jour
     top_level_info = {
         "sequence": str(row.get('Sequence', '')),
         "name": str(row.get('Name_Seq', '')),
@@ -150,7 +149,7 @@ def main():
     # with open(output_file, 'w') as f:
     #     json.dump(all_documents, f, indent=4)
     
-    collection.insert_many(all_documents)   
+    collection.insert_many(all_documents)
     client.close()
 
     print(f"{len(all_documents)} documents inseres dans Mongodb")
