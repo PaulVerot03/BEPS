@@ -1,11 +1,9 @@
-import pandas as pd
+import pandas as pd  # pyright: ignore[reportMissingImports]
 import json
 import os
-# pyrefly: ignore [missing-import]
-from dotenv import load_dotenv
-# pyrefly: ignore [missing-import]
-from pymongo import MongoClient 
-from pymongo import AsyncMongoClient
+from dotenv import load_dotenv  # pyright: ignore[reportMissingImports]
+from pymongo import MongoClient  # pyright: ignore[reportMissingImports]
+from pymongo import AsyncMongoClient  # pyright: ignore[reportMissingImports]
 
 '''
 This .py file will be called by the main task, it will be given a path to the specific vis_  dir.
@@ -66,7 +64,6 @@ def parse_metrics(metrics_df):
         "bond": str(row.get('Bond', ''))
     }
     
-    # TODO : query la base pour connaitre la version de l'enregistrement et la metre a jour
     top_level_info = {
         "sequence": str(row.get('Sequence', '')),
         "name": str(row.get('Name_Seq', '')),
@@ -151,15 +148,15 @@ def main():
         #print(f"{json.dumps(final_document, indent=4)}")
 
     output_file = "mongo_insert.json"
-    with open(output_file, 'w') as f:
-        json.dump(all_documents, f, indent=4)
+    # with open(output_file, 'w') as f:
+    #     json.dump(all_documents, f, indent=4)
     
-    collection.insert_many(all_documents)   
+    collection.insert_many(all_documents)
     client.close()
 
     print(f"{len(all_documents)} documents inseres dans Mongodb")
 
-    print(f"Successfully wrote {len(all_documents)} documents to {output_file}")
+    #print(f"Successfully wrote {len(all_documents)} documents to {output_file}")
 
 if __name__ == '__main__':
     main()
