@@ -1,6 +1,6 @@
-from botocore import parsers
-from annotated_types import doc
-import pymongo
+from botocore import parsers  # pyright: ignore[reportMissingImports]
+from annotated_types import doc  # pyright: ignore[reportMissingImports]
+import pymongo  # pyright: ignore[reportMissingImports]
 import pandas as pd  # pyright: ignore[reportMissingImports]
 import json
 import os
