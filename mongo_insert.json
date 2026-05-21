@@ -4,7 +4,7 @@
         "name": "crystal structure of the spliceosomal u2b''-u2a' protein complex bound to a fragment of u2 small nuclear rna",
         "organism": "homo sapiens",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153115_C3'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -15,7 +15,7 @@
             "time": "71.588",
             "gpu_time": "0.0",
             "video_path": "folding_video.mp4",
-            "final_score": "0.2481",
+            "final_score": "0.7481",
             "best_score_step": "6",
             "molecule": "RNA",
             "local_filepath": "outputs/opt_bs_C3'_rmsd_Seq_1_20260519_153115_full_atom.pdb",
@@ -1838,7 +1838,7 @@
         "name": "crystal structure of the spliceosomal u2b''-u2a' protein complex bound to a fragment of u2 small nuclear rna",
         "organism": "homo sapiens",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153115_C4'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -3672,7 +3672,7 @@
         "name": "crystal structure of the spliceosomal u2b''-u2a' protein complex bound to a fragment of u2 small nuclear rna",
         "organism": "homo sapiens",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153115_C1'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -5506,7 +5506,7 @@
         "name": "crystal structure of t3c mutant s15 ribosomal protein in complex with 16s rrna",
         "organism": "thermus thermophilus",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153242_C3'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -7940,7 +7940,7 @@
         "name": "crystal structure of t3c mutant s15 ribosomal protein in complex with 16s rrna",
         "organism": "thermus thermophilus",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153242_C1'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -9774,7 +9774,7 @@
         "name": "crystal structure of t3c mutant s15 ribosomal protein in complex with 16s rrna",
         "organism": "thermus thermophilus",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153242_C4'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -11908,7 +11908,7 @@
         "name": "crystal structure of a rna molecule containing domain 5 and 6 of the yeast ai5g group ii self-splicing intron",
         "organism": "nan",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153500_C3'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -14942,7 +14942,7 @@
         "name": "crystal structure of a rna molecule containing domain 5 and 6 of the yeast ai5g group ii self-splicing intron",
         "organism": "nan",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153500_C4'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -17976,7 +17976,7 @@
         "name": "crystal structure of a rna molecule containing domain 5 and 6 of the yeast ai5g group ii self-splicing intron",
         "organism": "nan",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153500_C1'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -20710,7 +20710,7 @@
         "name": "crystal structure analysis of a ternary s-domain complex of human signal recognition particle",
         "organism": "homo sapiens",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153833_C3'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -22844,7 +22844,7 @@
         "name": "crystal structure analysis of a ternary s-domain complex of human signal recognition particle",
         "organism": "homo sapiens",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153833_C4'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -25278,7 +25278,7 @@
         "name": "crystal structure analysis of a ternary s-domain complex of human signal recognition particle",
         "organism": "homo sapiens",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_153833_C1'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -30112,7 +30112,7 @@
         "name": "crystal structure of the specificity domain of ribonuclease p of the a-type",
         "organism": "nan",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_160453_C3'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -32546,7 +32546,7 @@
         "name": "crystal structure of the specificity domain of ribonuclease p of the a-type",
         "organism": "nan",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_160453_C1'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",
@@ -35580,7 +35580,7 @@
         "name": "crystal structure of the specificity domain of ribonuclease p of the a-type",
         "organism": "nan",
         "date": "2026-05-19",
-        "vers": "1.2",
+        "vers": "1.0",
         "file": "outputs/vis_20260519_160453_C4'/vis_best_full_atom.pdb",
         "metrics": {
             "methods": "bead-springs",

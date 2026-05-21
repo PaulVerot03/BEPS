@@ -1,9 +1,13 @@
+from annotated_types import doc
+import pymongo
 import pandas as pd  # pyright: ignore[reportMissingImports]
 import json
 import os
 from dotenv import load_dotenv  # pyright: ignore[reportMissingImports]
 from pymongo import MongoClient  # pyright: ignore[reportMissingImports]
 from pymongo import AsyncMongoClient  # pyright: ignore[reportMissingImports]
+from pprint import pprint
+
 
 '''
 This .py file will be called by the main task, it will be given a path to the specific vis_  dir.
@@ -55,7 +59,7 @@ def parse_metrics(metrics_df):
         "chain": str(row.get('Chain', '')),
         "time": str(row.get('Wall_Time_s', '')),
         "gpu_time": str(row.get('GPU_Time_s', '')),
-        "video_path": "folding_video.mp4",
+        "video_path": "folding_animation.mp4",
         "final_score": str(row.get('Final_Score', '')),
         "best_score_step": str(row.get('Best_Score_Step', '')),
         "molecule": str(row.get('Molecule', '')),
@@ -99,14 +103,22 @@ def get_version(sequence,collection):
     
     
 def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std, collection):
+    #print(top_level_info.get("sequence"))
     
+    temp_sequence = collection.find({"sequence":top_level_info.get("sequence"), "vers":"1.0"})
+    for doc in temp_sequence:        
+        if (doc["sequence"] == top_level_info.get("sequence")) & (doc["vers"] == get_version(top_level_info.get("vers", ""), collection)) & (float(doc["final_score"]) == float(top_level_info.get("Final_Score"))):
+            print("found")
+        #pprint(doc)
+    #print(f"type : {type(temp_sequence)}")
+        
     last_pdb = frames[-1]["pdb_path"] if frames else ""
     document = {
         "sequence": top_level_info.get("sequence", ""),
         "name": top_level_info.get("name", ""),
         "organism": top_level_info.get("organism", ""),
         "date": get_date(metrics.get("local_filepath", "")),
-        "vers": get_version(top_level_info.get("sequence", ""), collection),
+        "vers": get_version(top_level_info.get("vers", ""), collection),
         "file": last_pdb,
         "metrics": metrics,
         "RMSD_avg":avg,
@@ -121,15 +133,20 @@ def main():
     MONGO_URI = os.getenv("API_USER")
     client = MongoClient(MONGO_URI, tls=True)
     collection = client["anais"]["sequence"]
+    
+    #origin_path = os.path.abspath("Optimize_3D_ARNStructure")
+    
+    origin_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Optimize_3D_ARNStructure"))
+    
     # client = MongoClient(host="localhost", port=27017)
     # collection = client["rna_optimizer"]["structures"]
-    origin_path = "/home/anais/Optimize_3D_ARNStructure/"
-    source_file = "/home/anais/Optimize_3D_ARNStructure/metrics.csv"
-    #origin_path = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/"
     #origin_path = "/home/anais/Optimize_3D_ARNStructure/"
-    #source_file = "/home/anais/Optimize_3D_ARNStructure/metrics2.csv"
+    
+    csv_file = "metrics.csv"
+    source_file = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Optimize_3D_ARNStructure", csv_file))
+
+
     # Method,Score_Function,Sequence_Length,Bead_Atom,Wall_Time_s,GPU_Time_s,Final_Score,Best_Score_Step,Molecule,Out_Name,Potential,Bond,Vis_Dir
-    #source_file = "/home/paul/Documents/Evry/Stage/Optimize_3D_ARNStructure/metrics.csv"
     source = pd.read_csv(source_file, skipinitialspace=True)
     
     all_documents = []
@@ -144,15 +161,16 @@ def main():
         std,mean = get_std_mean(vis_df)
         metrics_dict, top_level_info = parse_metrics(metrics_df)
         
+        
         final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection)
         all_documents.append(final_document)
         #print(f"{json.dumps(final_document, indent=4)}")
 
     output_file = "mongo_insert.json"
-    # with open(output_file, 'w') as f:
-    #     json.dump(all_documents, f, indent=4)
+    with open(output_file, 'w') as f:
+        json.dump(all_documents, f, indent=4)
     
-    collection.insert_many(all_documents)
+    #collection.insert_many(all_documents)
     client.close()
 
     print(f"{len(all_documents)} documents inseres dans Mongodb")
