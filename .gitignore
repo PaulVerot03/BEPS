@@ -3,3 +3,4 @@ insert_data.py
 list_mongo.py
 __pycache__/api.cpython-310.pyc
 test_r2_connection.py
+mongo_insert.json

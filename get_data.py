@@ -1,3 +1,4 @@
+from botocore import parsers
 from annotated_types import doc
 import pymongo
 import pandas as pd  # pyright: ignore[reportMissingImports]
@@ -50,6 +51,10 @@ def get_std_mean(vis_df):
 
 def parse_metrics(metrics_df):
     row = metrics_df.iloc[0]
+
+    if not (str(row.get('Sequence', ''))).lower in ['a','u','g','c']:
+        raise ValueError("Sequence contains illegal letter")
+        
     
     document = {
         "methods": str(row.get('Method', '')),
@@ -68,6 +73,7 @@ def parse_metrics(metrics_df):
         "bond": str(row.get('Bond', ''))
     }
     
+    
     top_level_info = {
         "sequence": str(row.get('Sequence', '')),
         "name": str(row.get('Name_Seq', '')),
@@ -75,8 +81,6 @@ def parse_metrics(metrics_df):
     }
     
     return document, top_level_info
-
-#date
 
 def get_date(path):
     filename = os.path.basename(path)
@@ -87,38 +91,70 @@ def get_date(path):
     return ""
 
 
-#versionning
-def get_version(sequence,collection):
-    documents= list(collection.find({"sequence":sequence}))
-    if len(documents) == 0:
+def check_and_get_version(sequence, bead_atom,chain, new_final_score, collection, all_documents):
+    db_documents = list(collection.find({"sequence": sequence, "metrics.bead_atom": bead_atom, "metrics.chain": chain}))
+    
+    local_documents = [doc for doc in all_documents if doc.get("sequence") == sequence and doc.get("metrics", {}).get("bead_atom") == bead_atom and doc.get("metrics", {}).get("chain") == chain]
+    
+    all_matching_docs = db_documents + local_documents
+    
+    if len(all_matching_docs) == 0:
         return "1.0"
+        
+    best_existing_score = float('inf')
+    max_version = 0.0
+    
+    for doc in all_matching_docs:
+        vers_str = doc.get("vers")
+        if not vers_str:
+            vers_str = "1.0"
+            
+        try:
+            vers = float(vers_str)
+        except ValueError:
+            vers = 1.0
+            
+        if vers > max_version:
+            max_version = vers
+            
+        metrics = doc.get("metrics", {})
+        score_str = metrics.get("final_score")
+        if score_str:
+            try:
+                score = float(score_str)
+                if score < best_existing_score:
+                    best_existing_score = score
+            except ValueError:
+                pass
+                            
+    if new_final_score < best_existing_score:
+        print("yipeeeee")
+        return str(round(max_version + 0.1, 1))
     else:
-        versions= [float(doc["vers"]) for doc in documents if doc.get("vers")]
-        if not versions:
-            return "1.0"
-        derniere_version = max(versions)
-        # if sequence in collection then new version else not
-        nouvelle_version = round (derniere_version + 0.1, 1)
-        return str(nouvelle_version)
+        return None
     
     
-def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std, collection):
-    #print(top_level_info.get("sequence"))
+def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std, collection, all_documents):
+    sequence = top_level_info.get("sequence", "")
+    bead_atom = metrics.get("bead_atom", "")
+    chain = metrics.get("chain", "")
+    try:
+        new_final_score = float(metrics.get("final_score", float('inf')))
+    except ValueError:
+        new_final_score = float('inf')
+        
+    version = check_and_get_version(sequence, bead_atom,chain, new_final_score, collection, all_documents)
     
-    temp_sequence = collection.find({"sequence":top_level_info.get("sequence"), "vers":"1.0"})
-    for doc in temp_sequence:        
-        if (doc["sequence"] == top_level_info.get("sequence")) & (doc["vers"] == get_version(top_level_info.get("vers", ""), collection)) & (float(doc["final_score"]) == float(top_level_info.get("Final_Score"))):
-            print("found")
-        #pprint(doc)
-    #print(f"type : {type(temp_sequence)}")
+    if version is None:
+        return None
         
     last_pdb = frames[-1]["pdb_path"] if frames else ""
     document = {
-        "sequence": top_level_info.get("sequence", ""),
+        "sequence": sequence,
         "name": top_level_info.get("name", ""),
         "organism": top_level_info.get("organism", ""),
         "date": get_date(metrics.get("local_filepath", "")),
-        "vers": get_version(top_level_info.get("vers", ""), collection),
+        "vers": version,
         "file": last_pdb,
         "metrics": metrics,
         "RMSD_avg":avg,
@@ -134,26 +170,19 @@ def main():
     client = MongoClient(MONGO_URI, tls=True)
     collection = client["anais"]["sequence"]
     
-    #origin_path = os.path.abspath("Optimize_3D_ARNStructure")
     
     origin_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Optimize_3D_ARNStructure"))
-    
-    # client = MongoClient(host="localhost", port=27017)
-    # collection = client["rna_optimizer"]["structures"]
-    #origin_path = "/home/anais/Optimize_3D_ARNStructure/"
-    
+       
     csv_file = "metrics.csv"
     source_file = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Optimize_3D_ARNStructure", csv_file))
 
 
-    # Method,Score_Function,Sequence_Length,Bead_Atom,Wall_Time_s,GPU_Time_s,Final_Score,Best_Score_Step,Molecule,Out_Name,Potential,Bond,Vis_Dir
     source = pd.read_csv(source_file, skipinitialspace=True)
     
     all_documents = []
     
     for i,row in source.iterrows():
         path = os.path.join(origin_path,row["Vis_Dir"])
-        #print(row["Vis_Dir"])
         vis_df = read_folding_vis(path)
         metrics_df = read_metric(path)
 
@@ -162,18 +191,23 @@ def main():
         metrics_dict, top_level_info = parse_metrics(metrics_df)
         
         
-        final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection)
-        all_documents.append(final_document)
+        final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection, all_documents)
+        if final_document is not None:
+            all_documents.append(final_document)
+
         #print(f"{json.dumps(final_document, indent=4)}")
 
     output_file = "mongo_insert.json"
     with open(output_file, 'w') as f:
         json.dump(all_documents, f, indent=4)
-    
-    #collection.insert_many(all_documents)
+        
+    if all_documents:
+        collection.insert_many(all_documents)
+        print(f"{len(all_documents)} documents insérés dans MongoDB")
+    else:
+        print("No new documents to insert into MongoDB (all were discarded as identical or worse).")
+        
     client.close()
-
-    print(f"{len(all_documents)} documents inseres dans Mongodb")
 
     #print(f"Successfully wrote {len(all_documents)} documents to {output_file}")
 
