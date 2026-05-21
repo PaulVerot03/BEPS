@@ -93,6 +93,7 @@ def get_version(sequence,collection):
         if not versions:
             return "1.0"
         derniere_version = max(versions)
+        # if sequence in collection then new version else not
         nouvelle_version = round (derniere_version + 0.1, 1)
         return str(nouvelle_version)
     
