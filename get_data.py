@@ -191,6 +191,11 @@ def main():
             continue
         vis_df = read_folding_vis(path)
         metrics_df = read_metric(path)
+=======
+        try:
+            vis_df = read_folding_vis(path)
+            metrics_df = read_metric(path)
+>>>>>>> refs/remotes/origin/main
 
         frames = parse_vis(vis_df)
         std,mean = get_std_mean(vis_df)
