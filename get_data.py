@@ -43,6 +43,7 @@ def parse_vis(vis_df):
         }
         frames.append(interframe)
     return frames 
+
 def get_std_mean(vis_df):
     mean = vis_df["score"].mean()
     std = vis_df["score"].std()
@@ -52,7 +53,9 @@ def get_std_mean(vis_df):
 def parse_metrics(metrics_df):
     row = metrics_df.iloc[0]
 
-    if not (str(row.get('Sequence', ''))).lower in ['a','u','g','c']:
+    #verfication que la sequence contient que des lettres ARN valides 
+    #if not (str(row.get('Sequence', ''))).lower() in ['a','u','g','c']:
+    if not all(c.upper() in ['A','U','G','C'] for c in str(row.get('Sequence', ''))):
         raise ValueError("Sequence contains illegal letter")
         
     
@@ -183,6 +186,9 @@ def main():
     
     for i,row in source.iterrows():
         path = os.path.join(origin_path,row["Vis_Dir"])
+        if not os.path.isdir(path):
+            print(f"Skipping missing directory: {path}")
+            continue
         vis_df = read_folding_vis(path)
         metrics_df = read_metric(path)
 
