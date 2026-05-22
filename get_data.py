@@ -53,10 +53,17 @@ def get_std_mean(vis_df):
 def parse_metrics(metrics_df):
     row = metrics_df.iloc[0]
 
+<<<<<<< HEAD
     #verfication que la sequence contient que des lettres ARN valides 
     #if not (str(row.get('Sequence', ''))).lower() in ['a','u','g','c']:
     if not all(c.upper() in ['A','U','G','C'] for c in str(row.get('Sequence', ''))):
         raise ValueError("Sequence contains illegal letter")
+=======
+    sequence = str(row.get('Sequence', ''))
+    if not sequence or not all(c in 'augc' for c in sequence.lower()):
+        print(f"Warning: Sequence '{sequence}' contains illegal letters or is empty. Skipping.")
+        return None, None
+>>>>>>> refs/remotes/origin/main
         
     
     document = {
@@ -186,6 +193,7 @@ def main():
     
     for i,row in source.iterrows():
         path = os.path.join(origin_path,row["Vis_Dir"])
+<<<<<<< HEAD
         if not os.path.isdir(path):
             print(f"Skipping missing directory: {path}")
             continue
@@ -197,14 +205,19 @@ def main():
             metrics_df = read_metric(path)
 >>>>>>> refs/remotes/origin/main
 
-        frames = parse_vis(vis_df)
-        std,mean = get_std_mean(vis_df)
-        metrics_dict, top_level_info = parse_metrics(metrics_df)
-        
-        
-        final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection, all_documents)
-        if final_document is not None:
-            all_documents.append(final_document)
+            frames = parse_vis(vis_df)
+            std,mean = get_std_mean(vis_df)
+            metrics_dict, top_level_info = parse_metrics(metrics_df)
+            
+            if metrics_dict is None:
+                continue
+            
+            final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection, all_documents)
+            if final_document is not None:
+                all_documents.append(final_document)
+        except Exception as e:
+            print(f"Error processing {path}: {e}")
+            continue
 
         #print(f"{json.dumps(final_document, indent=4)}")
 
