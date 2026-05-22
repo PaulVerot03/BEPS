@@ -54,18 +54,10 @@ def parse_metrics(metrics_df):
     row = metrics_df.iloc[0]
 
     #verfication que la sequence contient que des lettres ARN valides 
-    #if not (str(row.get('Sequence', ''))).lower() in ['a','u','g','c']:
-    if not all(c.upper() in ['A','U','G','C'] for c in str(row.get('Sequence', ''))):
-        raise ValueError("Sequence contains illegal letter")
     sequence = str(row.get('Sequence', ''))
     if not sequence or not all(c in 'augc' for c in sequence.lower()):
         print(f"Warning: Sequence '{sequence}' contains illegal letters or is empty. Skipping.")
         return None, None
-    sequence = str(row.get('Sequence', ''))
-    if not sequence or not all(c in 'augc' for c in sequence.lower()):
-        print(f"Warning: Sequence '{sequence}' contains illegal letters or is empty. Skipping.")
-        return None, None
-        
     
     document = {
         "methods": str(row.get('Method', '')),
@@ -194,8 +186,6 @@ def main():
     
     for i,row in source.iterrows():
         path = os.path.join(origin_path,row["Vis_Dir"])
-        vis_df = read_folding_vis(path)
-        metrics_df = read_metric(path)
         try:
             vis_df = read_folding_vis(path)
             metrics_df = read_metric(path)
