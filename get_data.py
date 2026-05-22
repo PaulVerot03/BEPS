@@ -62,18 +62,18 @@ def parse_metrics(metrics_df):
     document = {
         "methods": str(row.get('Method', '')),
         "score_function": str(row.get('Score_Function', '')),
-        "length": str(row.get('Sequence_Length', '')),
+        "length": int(row.get('Sequence_Length', '')),
         "bead_atom": str(row.get('Bead_Atom', '')),
         "chain": str(row.get('Chain', '')),
-        "time": str(row.get('Wall_Time_s', '')),
-        "gpu_time": str(row.get('GPU_Time_s', '')),
+        "time": float(row.get('Wall_Time_s', '')),
+        "gpu_time": float(row.get('GPU_Time_s', '')),
         "video_path": "folding_animation.mp4",
-        "final_score": str(row.get('Final_Score', '')),
-        "best_score_step": str(row.get('Best_Score_Step', '')),
+        "final_score": float(row.get('Final_Score', '')),
+        "best_score_step": int(row.get('Best_Score_Step', '')),
         "molecule": str(row.get('Molecule', '')),
         "local_filepath": str(row.get('Out_Name', '')),
-        "potential": str(row.get('Potential', '')),
-        "bond": str(row.get('Bond', ''))
+        "potential": float(row.get('Potential', '')),
+        "bond": float(row.get('Bond', ''))
     }
     
     
