@@ -38,7 +38,7 @@ def parse_vis(vis_df):
         interframe = {
             "phase": str(row.iloc[0]),
             "epoch": str(row.iloc[1]),
-            "score": str(row.iloc[2]),
+            "score": float(row.iloc[2]),
             "pdb_path": str(row.iloc[3])
         }
         frames.append(interframe)
