@@ -200,14 +200,19 @@ def main():
             vis_df = read_folding_vis(path)
             metrics_df = read_metric(path)
 
-        frames = parse_vis(vis_df)
-        std,mean = get_std_mean(vis_df)
-        metrics_dict, top_level_info = parse_metrics(metrics_df)
-        
-        
-        final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection, all_documents)
-        if final_document is not None:
-            all_documents.append(final_document)
+            frames = parse_vis(vis_df)
+            std,mean = get_std_mean(vis_df)
+            metrics_dict, top_level_info = parse_metrics(metrics_df)
+            
+            if metrics_dict is None:
+                continue
+            
+            final_document = prepare_send_to_mongo(metrics_dict, top_level_info, frames, mean, std, collection, all_documents)
+            if final_document is not None:
+                all_documents.append(final_document)
+        except Exception as e:
+            print(f"Error processing {path}: {e}")
+            continue
 
         #print(f"{json.dumps(final_document, indent=4)}")
 
