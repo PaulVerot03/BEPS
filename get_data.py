@@ -170,8 +170,8 @@ def prepare_send_to_mongo(metrics, top_level_info, frames, avg, std, collection,
 def main():
     load_dotenv()
     MONGO_URI = os.getenv("API_USER")
-    client = MongoClient(MONGO_URI, tls=True)
-    collection = client["anais"]["sequence"]
+    client = MongoClient(MONGO_URI, tls=False)
+    collection = client["arn"]["sequences"]
     
     
     origin_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Optimize_3D_ARNStructure"))
@@ -180,7 +180,34 @@ def main():
     source_file = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Optimize_3D_ARNStructure", csv_file))
 
 
-    source = pd.read_csv(source_file, skipinitialspace=True)
+    vis_dirs = []
+    if os.path.exists(source_file):
+        import csv
+        with open(source_file, 'r', encoding='utf-8') as f:
+            reader = csv.reader(f)
+            header = next(reader, None)
+            if header:
+                vis_dir_idx = -1
+                for idx, col in enumerate(header):
+                    if col.strip() == "Vis_Dir":
+                        vis_dir_idx = idx
+                        break
+                for row in reader:
+                    if not row:
+                        continue
+                    vis_dir = None
+                    if vis_dir_idx != -1 and vis_dir_idx < len(row):
+                        val = row[vis_dir_idx].strip()
+                        if val:
+                            vis_dir = val
+                    else:
+                        # Fallback if row length is dynamic and does not match header
+                        last_val = row[-1].strip()
+                        if last_val and ("vis_" in last_val or "outputs/" in last_val) and not last_val.endswith(".pdb"):
+                            vis_dir = last_val
+                    if vis_dir:
+                        vis_dirs.append({"Vis_Dir": vis_dir})
+    source = pd.DataFrame(vis_dirs)
     
     all_documents = []
     

@@ -29,19 +29,18 @@ def get_r2_client():
     )
 
 def upload_directory_to_r2(directory_path, bucket_name):
-    """Uploads all .pdb and .cif files from the given directory to R2."""
+    """Uploads only vis_best_full_atom.pdb files from the given directory to R2."""
     s3_client = get_r2_client()
     if not s3_client:
         return
 
-    # Only upload files from directories starting with "vis"
-    search_pattern_pdb = os.path.join(directory_path, "vis*", "**", "*.pdb")
-    search_pattern_cif = os.path.join(directory_path, "vis*", "**", "*.cif")
+    # Only upload vis_best_full_atom.pdb files from directories starting with "vis"
+    search_pattern = os.path.join(directory_path, "vis*", "**", "vis_best_full_atom.pdb")
     
-    files_to_upload = glob.glob(search_pattern_pdb, recursive=True) + glob.glob(search_pattern_cif, recursive=True)
+    files_to_upload = glob.glob(search_pattern, recursive=True)
 
     if not files_to_upload:
-        print(f"No .pdb or .cif files found in {directory_path}")
+        print(f"No vis_best_full_atom.pdb files found in {directory_path}")
         return
 
     print(f"Found {len(files_to_upload)} files to upload to R2 bucket '{bucket_name}'...")
