@@ -5,6 +5,7 @@
     "date": "",
     "vers": "",
     "file": "",
+    "video_path":"",
     "metrics": {
         "methods": "",
         "score_function": "",
@@ -26,7 +27,6 @@
             "phase": "",
             "epoch": "",
             "score": "",
-            "video_path": "",
             "pdb_path": ""
         }
     ]

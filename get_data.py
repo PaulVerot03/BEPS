@@ -187,26 +187,12 @@ def main():
             reader = csv.reader(f)
             header = next(reader, None)
             if header:
-                vis_dir_idx = -1
-                for idx, col in enumerate(header):
-                    if col.strip() == "Vis_Dir":
-                        vis_dir_idx = idx
-                        break
                 for row in reader:
                     if not row:
                         continue
-                    vis_dir = None
-                    if vis_dir_idx != -1 and vis_dir_idx < len(row):
-                        val = row[vis_dir_idx].strip()
-                        if val:
-                            vis_dir = val
-                    else:
-                        # Fallback if row length is dynamic and does not match header
-                        last_val = row[-1].strip()
-                        if last_val and ("vis_" in last_val or "outputs/" in last_val) and not last_val.endswith(".pdb"):
-                            vis_dir = last_val
-                    if vis_dir:
-                        vis_dirs.append({"Vis_Dir": vis_dir})
+                    last_val = row[-1].strip()
+                    if last_val and ("vis_" in last_val or "outputs/" in last_val) and not last_val.endswith(".pdb") and not last_val.endswith(".cif"):
+                        vis_dirs.append({"Vis_Dir": last_val})
     source = pd.DataFrame(vis_dirs)
     
     all_documents = []
