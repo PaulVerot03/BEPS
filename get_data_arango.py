@@ -293,13 +293,31 @@ def main():
                 frames = parse_vis(vis_df)
                 std, mean = get_std_mean(vis_df)
                 
-                # Use the data from the global metrics.csv row
-                metrics_df = df.iloc[[i]]
-                metrics_dict, top_level_info = parse_metrics(metrics_df)
+                # Read local metrics.csv for full prediction-specific details (Sequence, Chain, Organism, Name_Seq, PDB info)
+                local_metrics_df = read_metric(vis_dir_path)
+                metrics_dict, top_level_info = parse_metrics(local_metrics_df)
                 
                 if metrics_dict is None:
-                    print(f"Warning: Row {i} metrics_dict is None, skipping.")
+                    print(f"Warning: Row {i} local metrics_dict is None, skipping.")
                     continue
+                
+                # Overwrite/enrich with global row keys that may not exist locally (Score_Weights, WCA, RMSD, etc.)
+                for key in ["Score_Weights", "Optimization_Mode", "WCA", "RMSD", "RMSD_bead", "Vis_Dir"]:
+                    val = row.get(key)
+                    if pd.notna(val):
+                        field_name = key.lower()
+                        if field_name == "score_weights":
+                            metrics_dict["score_weights"] = str(val)
+                        elif field_name == "optimization_mode":
+                            metrics_dict["optimization_mode"] = str(val)
+                        elif field_name == "wca":
+                            metrics_dict["wca"] = safe_float(val)
+                        elif field_name == "rmsd":
+                            metrics_dict["rmsd"] = safe_float(val)
+                        elif field_name == "rmsd_bead":
+                            metrics_dict["rmsd_bead"] = str(val)
+                        elif field_name == "vis_dir":
+                            metrics_dict["vis_dir"] = str(val)
                     
                 if args.sequence:
                     top_level_info["sequence"] = args.sequence
