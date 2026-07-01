@@ -59,18 +59,23 @@ def parse_metrics(metrics_df):
         "methods": str(row.get('Method', '')),
         "optimization_mode": str(row.get('Optimization_Mode','')),
         "score_function": str(row.get('Score_Function', '')),
-        "length": int(row.get('Sequence_Length', '')),
+        "score_weights": str(row.get('Score_Weights', '')),
+        "length": int(row.get('Sequence_Length', 0) or 0),
         "bead_atom": str(row.get('Bead_Atom', '')),
         "chain": str(row.get('Chain', '')),
-        "time": float(row.get('Wall_Time_s', '')),
-        "gpu_time": float(row.get('GPU_Time_s', '')),
+        "time": float(row.get('Wall_Time_s', 0.0) or 0.0),
+        "gpu_time": float(row.get('GPU_Time_s', 0.0) or 0.0),
         "video_path": "folding_animation.mp4",
-        "final_score": float(row.get('Final_Score', '')),
-        "best_score_step": int(row.get('Best_Score_Step', '')),
+        "final_score": float(row.get('Final_Score', 0.0) or 0.0),
+        "best_score_step": int(row.get('Best_Score_Step', 0) or 0),
         "molecule": str(row.get('Molecule', '')),
         "local_filepath": str(row.get('Out_Name', '')),
-        "potential": float(row.get('Potential', '')),
-        "bond": float(row.get('Bond', '')),
+        "potential": float(row.get('Potential', 0.0) or 0.0),
+        "bond": float(row.get('Bond', 0.0) or 0.0),
+        "wca": float(row.get('WCA', 0.0) or 0.0),
+        "rmsd": float(row.get('RMSD', 0.0) or 0.0),
+        "rmsd_bead": str(row.get('RMSD_bead', '')),
+        "vis_dir": str(row.get('Vis_Dir', '')),
         "type": str(row.get('Type', ''))
     }
     
@@ -237,31 +242,39 @@ def main():
             if not out_name or not out_name.endswith('.pdb'):
                 continue
                 
-            # e.g. out_name: outputs/opt_bs_C4'_cgRNASP_Seq_1_161850_793965_228916.pdb
-            # we need to extract Seq_1_161850_793965_228916
-            import re
-            filename = os.path.basename(out_name)
-            # Match anything that starts with Seq_ followed by digits/underscores
-            m = re.search(r'(Seq_[0-9]+_[0-9_]+)', filename)
-            if not m:
-                continue
-            
-            seq_part = m.group(1)
-            # clean up trailing _full_atom if matched
-            seq_part = seq_part.replace('_full_atom', '').strip('_')
-            
-            bead_atom = str(row.get('Bead_Atom', "C4'"))
-            vis_dir_name = f"vis_{seq_part}_{bead_atom}"
-            
-            out_dir = os.path.dirname(out_name)
-            vis_dir_path = os.path.join(origin_path, out_dir, vis_dir_name)
-            
-            if not os.path.isdir(vis_dir_path):
-                # Try fallback without bead_atom if not found
-                vis_dir_name = f"vis_{seq_part}"
-                vis_dir_path = os.path.join(origin_path, out_dir, vis_dir_name)
+            vis_dir_val = str(row.get('Vis_Dir', '')).strip()
+            vis_dir_path = None
+            if vis_dir_val and vis_dir_val.lower() != 'nan':
+                vis_dir_path = os.path.join(origin_path, vis_dir_val)
                 if not os.path.isdir(vis_dir_path):
+                    vis_dir_path = None
+                    
+            if not vis_dir_path:
+                # e.g. out_name: outputs/opt_bs_C4'_cgRNASP_Seq_1_161850_793965_228916.pdb
+                # we need to extract Seq_1_161850_793965_228916
+                import re
+                filename = os.path.basename(out_name)
+                # Match anything that starts with Seq_ followed by digits/underscores
+                m = re.search(r'(Seq_[0-9]+_[0-9_]+)', filename)
+                if not m:
                     continue
+                
+                seq_part = m.group(1)
+                # clean up trailing _full_atom if matched
+                seq_part = seq_part.replace('_full_atom', '').strip('_')
+                
+                bead_atom = str(row.get('Bead_Atom', "C4'"))
+                vis_dir_name = f"vis_{seq_part}_{bead_atom}"
+                
+                out_dir = os.path.dirname(out_name)
+                vis_dir_path = os.path.join(origin_path, out_dir, vis_dir_name)
+                
+                if not os.path.isdir(vis_dir_path):
+                    # Try fallback without bead_atom if not found
+                    vis_dir_name = f"vis_{seq_part}"
+                    vis_dir_path = os.path.join(origin_path, out_dir, vis_dir_name)
+                    if not os.path.isdir(vis_dir_path):
+                        continue
             
             try:
                 vis_df = read_folding_vis(vis_dir_path)
@@ -276,6 +289,8 @@ def main():
                 metrics_dict = {
                     "methods": str(row.get('Method', '')),
                     "score_function": str(row.get('Score_Function', '')),
+                    "score_weights": str(row.get('Score_Weights', '')),
+                    "optimization_mode": str(row.get('Optimization_Mode', '')),
                     "length": int(row.get('Sequence_Length', 0) or 0),
                     "bead_atom": str(row.get('Bead_Atom', '')),
                     "chain": str(row.get('Chain', 'A')),
@@ -288,6 +303,10 @@ def main():
                     "local_filepath": out_name,
                     "potential": float(row.get('Potential', 0.0) or 0.0),
                     "bond": float(row.get('Bond', 0.0) or 0.0),
+                    "wca": float(row.get('WCA', 0.0) or 0.0),
+                    "rmsd": float(row.get('RMSD', 0.0) or 0.0),
+                    "rmsd_bead": str(row.get('RMSD_bead', '')),
+                    "vis_dir": str(row.get('Vis_Dir', '')),
                     "type": str(row.get('Type', ''))
                 }
                 
