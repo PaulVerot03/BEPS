@@ -23,6 +23,12 @@ Those infos will be inserted into a mongoDB database.
 def read_folding_vis(path):
     csv_path = path + '/folding_vis.csv'
     df = pd.read_csv(csv_path, skipinitialspace=True)
+    if len(df.columns) > 2:
+        # Rename the 3rd column (index 2) to "score" in case it is named "RMSD" or something else
+        df = df.rename(columns={df.columns[2]: "score"})
+        # Coerce non-numeric values (like 'RMSD' string) to NaN and drop them
+        df["score"] = pd.to_numeric(df["score"], errors='coerce')
+        df = df.dropna(subset=["score"])
     return df
 
 def read_metric(path):
@@ -50,6 +56,22 @@ def get_std_mean(vis_df):
     return std, mean
     
 
+def safe_float(val, default=0.0):
+    if pd.isna(val):
+        return default
+    try:
+        return float(val)
+    except (ValueError, TypeError):
+        return default
+
+def safe_int(val, default=0):
+    if pd.isna(val):
+        return default
+    try:
+        return int(float(val))
+    except (ValueError, TypeError):
+        return default
+
 def parse_metrics(metrics_df):
     row = metrics_df.iloc[0]
 
@@ -62,18 +84,18 @@ def parse_metrics(metrics_df):
     document = {
         "methods": str(row.get('Method', '')),
         "score_function": str(row.get('Score_Function', '')),
-        "length": int(row.get('Sequence_Length', '')),
+        "length": safe_int(row.get('Sequence_Length', 0)),
         "bead_atom": str(row.get('Bead_Atom', '')),
         "chain": str(row.get('Chain', '')),
-        "time": float(row.get('Wall_Time_s', '')),
-        "gpu_time": float(row.get('GPU_Time_s', '')),
+        "time": safe_float(row.get('Wall_Time_s', 0.0)),
+        "gpu_time": safe_float(row.get('GPU_Time_s', 0.0)),
         "video_path": "folding_animation.mp4",
-        "final_score": float(row.get('Final_Score', '')),
-        "best_score_step": int(row.get('Best_Score_Step', '')),
+        "final_score": safe_float(row.get('Final_Score', 0.0)),
+        "best_score_step": safe_int(row.get('Best_Score_Step', 0)),
         "molecule": str(row.get('Molecule', '')),
         "local_filepath": str(row.get('Out_Name', '')),
-        "potential": float(row.get('Potential', '')),
-        "bond": float(row.get('Bond', ''))
+        "potential": safe_float(row.get('Potential', 0.0)),
+        "bond": safe_float(row.get('Bond', 0.0))
     }
     
     
