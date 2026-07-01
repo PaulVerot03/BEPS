@@ -43,19 +43,30 @@ def read_metric(path):
 
 def parse_vis(vis_df):
     frames = []
+    import math
     for _, row in vis_df.iterrows():
+        score_val = float(row.iloc[2])
+        if pd.isna(score_val) or not math.isfinite(score_val):
+            score_val = 0.0
         interframe = {
             "phase": str(row.iloc[0]),
             "epoch": str(row.iloc[1]),
-            "score": float(row.iloc[2]),
+            "score": score_val,
             "pdb_path": str(row.iloc[3])
         }
         frames.append(interframe)
     return frames 
 
 def get_std_mean(vis_df):
+    import math
     mean = vis_df["score"].mean()
     std = vis_df["score"].std()
+    
+    if pd.isna(mean) or not math.isfinite(mean):
+        mean = 0.0
+    if pd.isna(std) or not math.isfinite(std):
+        std = 0.0
+        
     return std, mean
     
 
@@ -63,7 +74,11 @@ def safe_float(val, default=0.0):
     if pd.isna(val):
         return default
     try:
-        return float(val)
+        fval = float(val)
+        import math
+        if not math.isfinite(fval):
+            return default
+        return fval
     except (ValueError, TypeError):
         return default
 
