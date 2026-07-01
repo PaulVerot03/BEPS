@@ -23,13 +23,41 @@ Those infos will be inserted into a mongoDB database.
 def read_folding_vis(path):
     csv_path = path + '/folding_vis.csv'
     df = pd.read_csv(csv_path, skipinitialspace=True)
-    if len(df.columns) > 2:
-        # Rebuild a clean DataFrame with known columns to avoid duplicate/extra column issues
+    if len(df.columns) > 0:
+        # Strip and lowercase columns for uniform access
+        df.columns = df.columns.str.strip().str.lower()
+        
+        # 1. phase
+        phase_col = "phase" if "phase" in df.columns else df.columns[0]
+        # 2. epoch
+        epoch_col = "epoch" if "epoch" in df.columns else df.columns[1]
+        
+        # 3. score (evolution value)
+        score_col = None
+        for name in ["score", "rmsd", "value"]:
+            if name in df.columns:
+                score_col = name
+                break
+        if score_col is None:
+            # Fallback to index 5 (score) if it exists, otherwise index 2
+            score_col = df.columns[5] if len(df.columns) > 5 else df.columns[2]
+            
+        # 4. pdb_path
+        pdb_col = None
+        for name in ["path_fichier_pdb", "pdb_path", "filepath", "path"]:
+            if name in df.columns:
+                pdb_col = name
+                break
+        if pdb_col is None:
+            # Fallback to last column
+            pdb_col = df.columns[-1]
+            
+        # Rebuild a clean DataFrame
         clean_df = pd.DataFrame({
-            "phase": df.iloc[:, 0],
-            "epoch": df.iloc[:, 1],
-            "score": pd.to_numeric(df.iloc[:, 2], errors='coerce'),
-            "pdb_path": df.iloc[:, 3] if len(df.columns) > 3 else ""
+            "phase": df[phase_col],
+            "epoch": df[epoch_col],
+            "score": pd.to_numeric(df[score_col], errors='coerce'),
+            "pdb_path": df[pdb_col]
         })
         df = clean_df.dropna(subset=["score"])
     return df
@@ -126,10 +154,26 @@ def parse_metrics(metrics_df):
     return document, top_level_info
 
 def get_date(path):
+    import re
+    # 1. Search for a standalone 8-digit date string anywhere in path
+    m = re.search(r'(?:^|[\/_])(\d{8})(?:$|[\/_])', path)
+    if m:
+        part = m.group(1)
+        return f"{part[:4]}-{part[4:6]}-{part[6:]}"
+        
+    # 2. Fallback to parsing folder components
+    parts = path.replace('\\', '/').split('/')
+    for p in parts:
+        subparts = p.split('_')
+        for part in subparts:
+            if len(part) == 8 and part.isdigit():
+                return f"{part[:4]}-{part[4:6]}-{part[6:]}"
+                
+    # 3. Last fallback: original basename split logic
     filename = os.path.basename(path)
-    parts= filename.split("_")
+    parts = filename.split("_")
     for part in parts:
-        if len(part)==8 and part.isdigit():
+        if len(part) == 8 and part.isdigit():
             return f"{part[:4]}-{part[4:6]}-{part[6:]}"
     return ""
 
