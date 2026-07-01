@@ -51,9 +51,8 @@ def parse_metrics(metrics_df):
 
     #verfication que la sequence contient que des lettres ARN valides 
     sequence = str(row.get('Sequence', ''))
-    if not sequence or not all(c in 'augc' for c in sequence.lower()):
-        print(f"Warning: Sequence '{sequence}' contains illegal letters or is empty. Skipping.")
-        return None, None
+    if sequence and not all(c in 'augc' for c in sequence.lower()):
+        print(f"Warning: Sequence '{sequence}' contains non-RNA letters.")
     
     document = {
         "methods": str(row.get('Method', '')),
@@ -232,100 +231,52 @@ def main():
     source_file = os.path.abspath(os.path.join(origin_path, csv_file))
 
     all_documents = []
+    
     if os.path.exists(source_file):
         df = pd.read_csv(source_file, skipinitialspace=True)
         df.columns = df.columns.str.strip()
         df = df.map(lambda x: x.strip() if isinstance(x, str) else x)
         
         for i, row in df.iterrows():
-            out_name = str(row.get('Out_Name', ''))
-            if not out_name or not out_name.endswith('.pdb'):
+            vis_dir_val = str(row.get('Vis_Dir', '')).strip()
+            if not vis_dir_val or vis_dir_val.lower() == 'nan':
+                print(f"Row {i} skipped: Vis_Dir is empty or nan.")
                 continue
                 
-            vis_dir_val = str(row.get('Vis_Dir', '')).strip()
-            vis_dir_path = None
-            if vis_dir_val and vis_dir_val.lower() != 'nan':
-                vis_dir_path = os.path.join(origin_path, vis_dir_val)
-                if not os.path.isdir(vis_dir_path):
-                    vis_dir_path = None
-                    
-            if not vis_dir_path:
-                # e.g. out_name: outputs/opt_bs_C4'_cgRNASP_Seq_1_161850_793965_228916.pdb
-                # we need to extract Seq_1_161850_793965_228916
-                import re
-                filename = os.path.basename(out_name)
-                # Match anything that starts with Seq_ followed by digits/underscores
-                m = re.search(r'(Seq_[0-9]+_[0-9_]+)', filename)
-                if not m:
-                    continue
+            vis_dir_path = os.path.join(origin_path, vis_dir_val)
+            if not os.path.isdir(vis_dir_path):
+                print(f"Row {i} skipped: Directory {vis_dir_path} does not exist.")
+                continue
                 
-                seq_part = m.group(1)
-                # clean up trailing _full_atom if matched
-                seq_part = seq_part.replace('_full_atom', '').strip('_')
-                
-                bead_atom = str(row.get('Bead_Atom', "C4'"))
-                vis_dir_name = f"vis_{seq_part}_{bead_atom}"
-                
-                out_dir = os.path.dirname(out_name)
-                vis_dir_path = os.path.join(origin_path, out_dir, vis_dir_name)
-                
-                if not os.path.isdir(vis_dir_path):
-                    # Try fallback without bead_atom if not found
-                    vis_dir_name = f"vis_{seq_part}"
-                    vis_dir_path = os.path.join(origin_path, out_dir, vis_dir_name)
-                    if not os.path.isdir(vis_dir_path):
-                        continue
-            
             try:
                 vis_df = read_folding_vis(vis_dir_path)
                 frames = parse_vis(vis_df)
                 std, mean = get_std_mean(vis_df)
                 
-                seq_val = args.sequence if args.sequence else str(row.get('Sequence', ''))
-                if not seq_val:
-                    # If we really don't have a sequence from args or csv, skip
+                # Use the data from the global metrics.csv row
+                metrics_df = df.iloc[[i]]
+                metrics_dict, top_level_info = parse_metrics(metrics_df)
+                
+                if metrics_dict is None:
+                    print(f"Warning: Row {i} metrics_dict is None, skipping.")
                     continue
                     
-                metrics_dict = {
-                    "methods": str(row.get('Method', '')),
-                    "score_function": str(row.get('Score_Function', '')),
-                    "score_weights": str(row.get('Score_Weights', '')),
-                    "optimization_mode": str(row.get('Optimization_Mode', '')),
-                    "length": int(row.get('Sequence_Length', 0) or 0),
-                    "bead_atom": str(row.get('Bead_Atom', '')),
-                    "chain": str(row.get('Chain', 'A')),
-                    "time": float(row.get('Wall_Time_s', 0.0) or 0.0),
-                    "gpu_time": float(row.get('GPU_Time_s', 0.0) or 0.0),
-                    "video_path": "folding_animation.mp4",
-                    "final_score": float(row.get('Final_Score', 0.0) or 0.0),
-                    "best_score_step": int(row.get('Best_Score_Step', 0) or 0),
-                    "molecule": str(row.get('Molecule', 'RNA')),
-                    "local_filepath": out_name,
-                    "potential": float(row.get('Potential', 0.0) or 0.0),
-                    "bond": float(row.get('Bond', 0.0) or 0.0),
-                    "wca": float(row.get('WCA', 0.0) or 0.0),
-                    "rmsd": float(row.get('RMSD', 0.0) or 0.0),
-                    "rmsd_bead": str(row.get('RMSD_bead', '')),
-                    "vis_dir": str(row.get('Vis_Dir', '')),
-                    "type": str(row.get('Type', ''))
-                }
-                
-                if metrics_dict["type"].lower() == "switch":
-                    metrics_dict["pdb_initial"] = str(row.get('pdb_initial', ''))
-                    metrics_dict["cible"] = str(row.get('pdb_cible', ''))
-                
-                top_level_info = {
-                    "sequence": seq_val,
-                    "name": str(row.get('Name_Seq', 'N/A')),
-                    "organism": str(row.get('Organism', 'N/A')),
-                }
-                
+                if args.sequence:
+                    top_level_info["sequence"] = args.sequence
+                    
+                seq_val = top_level_info.get("sequence", "")
+                if not seq_val or str(seq_val).lower() == 'nan':
+                    top_level_info["sequence"] = "UNKNOWN"
+                    
+                if not metrics_dict.get("vis_dir") or str(metrics_dict.get("vis_dir")).lower() == 'nan':
+                    metrics_dict["vis_dir"] = vis_dir_val
+                    
                 final_document = prepare_send_to_arango(metrics_dict, top_level_info, frames, mean, std, db, all_documents)
                 if final_document is not None:
                     all_documents.append(final_document)
                     
             except Exception as e:
-                print(f"Error processing {vis_dir_path}: {e}")
+                print(f"Error processing row {i} with vis_dir {vis_dir_path}: {e}")
                 continue
 
     output_file = "arango_insert.json"
