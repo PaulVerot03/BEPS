@@ -20,11 +20,14 @@ def read_folding_vis(path):
     csv_path = path + '/folding_vis.csv'
     df = pd.read_csv(csv_path, skipinitialspace=True)
     if len(df.columns) > 2:
-        # Rename the 3rd column (index 2) to "score" in case it is named "RMSD" or something else
-        df = df.rename(columns={df.columns[2]: "score"})
-        # Coerce non-numeric values (like 'RMSD' string) to NaN and drop them
-        df["score"] = pd.to_numeric(df["score"], errors='coerce')
-        df = df.dropna(subset=["score"])
+        # Rebuild a clean DataFrame with known columns to avoid duplicate/extra column issues
+        clean_df = pd.DataFrame({
+            "phase": df.iloc[:, 0],
+            "epoch": df.iloc[:, 1],
+            "score": pd.to_numeric(df.iloc[:, 2], errors='coerce'),
+            "pdb_path": df.iloc[:, 3] if len(df.columns) > 3 else ""
+        })
+        df = clean_df.dropna(subset=["score"])
     return df
 
 def read_metric(path):
